@@ -1,0 +1,1080 @@
+# depslib dependency file v1.0
+1732485637 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\frmcadextensao.cpp
+	"resource.h"
+	"FrmCadExtensao.h"
+	"hfsguardadir/comum/Rotinas.h"
+	"hfsguardadir/catalogador/Catalogador.h"
+	"hfsguardadir/objetos/Extensao.h"
+	"hfsguardadir/objetosbo/ExtensaoBO.h"
+	"hfsguardadir/objetosgui/EscolhaArquivo.h"
+	"hfsguardadir/objetosgui/Dialogo.h"
+
+1732539465 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\resource.h
+	<new>
+	<ctime>
+	<cmath>
+	<cstdlib>
+	<cstdio>
+	"fx.h"
+	"FXArray.h"
+	"FXThread.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fx.h
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<math.h>
+	<string.h>
+	"fxver.h"
+	"fxdefs.h"
+	"fxascii.h"
+	"fxunicode.h"
+	"FXHash.h"
+	"FXException.h"
+	"FXThread.h"
+	"FXStream.h"
+	"FXIO.h"
+	"FXFile.h"
+	"FXPipe.h"
+	"FXSocket.h"
+	"FXFileStream.h"
+	"FXMemoryStream.h"
+	"FXString.h"
+	"FXSize.h"
+	"FXPoint.h"
+	"FXRectangle.h"
+	"FXObject.h"
+	"FXDelegator.h"
+	"FXDict.h"
+	"FXPath.h"
+	"FXSystem.h"
+	"FXStat.h"
+	"FXDir.h"
+	"FXDate.h"
+	"FXURL.h"
+	"FXStringDict.h"
+	"FXSettings.h"
+	"FXRegistry.h"
+	"FXObjectList.h"
+	"FXAccelTable.h"
+	"FXRecentFiles.h"
+	"FXApp.h"
+	"FXId.h"
+	"FXVisual.h"
+	"FXFont.h"
+	"FXCursor.h"
+	"FXGUISignal.h"
+	"FXCURCursor.h"
+	"FXGIFCursor.h"
+	"FXDrawable.h"
+	"FXBitmap.h"
+	"FXImage.h"
+	"FXIcon.h"
+	"FXGIFImage.h"
+	"FXIFFImage.h"
+	"FXBMPImage.h"
+	"FXICOImage.h"
+	"FXXBMImage.h"
+	"FXXPMImage.h"
+	"FXPCXImage.h"
+	"FXTGAImage.h"
+	"FXRGBImage.h"
+	"FXPPMImage.h"
+	"FXRASImage.h"
+	"FXGIFIcon.h"
+	"FXIFFIcon.h"
+	"FXBMPIcon.h"
+	"FXICOIcon.h"
+	"FXXBMIcon.h"
+	"FXXPMIcon.h"
+	"FXPCXIcon.h"
+	"FXTGAIcon.h"
+	"FXRGBIcon.h"
+	"FXPPMIcon.h"
+	"FXRASIcon.h"
+	"FXRegion.h"
+	"FXDC.h"
+	"FXDCWindow.h"
+	"FXDCPrint.h"
+	"FXIconSource.h"
+	"FXIconDict.h"
+	"FXFileDict.h"
+	"FXWindow.h"
+	"FXFrame.h"
+	"FXSeparator.h"
+	"FXLabel.h"
+	"FX7Segment.h"
+	"FXDial.h"
+	"FXKnob.h"
+	"FXColorBar.h"
+	"FXColorRing.h"
+	"FXColorWell.h"
+	"FXColorWheel.h"
+	"FXTextField.h"
+	"FXButton.h"
+	"FXPicker.h"
+	"FXToggleButton.h"
+	"FXTriStateButton.h"
+	"FXCheckButton.h"
+	"FXRadioButton.h"
+	"FXArrowButton.h"
+	"FXMenuButton.h"
+	"FXComposite.h"
+	"FXPacker.h"
+	"FXHorizontalFrame.h"
+	"FXVerticalFrame.h"
+	"FXSpring.h"
+	"FXMatrix.h"
+	"FXSpinner.h"
+	"FXRealSpinner.h"
+	"FXRootWindow.h"
+	"FXCanvas.h"
+	"FXGroupBox.h"
+	"FXShell.h"
+	"FXToolTip.h"
+	"FXPopup.h"
+	"FXTopWindow.h"
+	"FXDialogBox.h"
+	"FXMainWindow.h"
+	"FXMenuPane.h"
+	"FXScrollPane.h"
+	"FXMenuCaption.h"
+	"FXMenuSeparator.h"
+	"FXMenuTitle.h"
+	"FXMenuCascade.h"
+	"FXMenuCommand.h"
+	"FXMenuCheck.h"
+	"FXMenuRadio.h"
+	"FXMenuBar.h"
+	"FXOptionMenu.h"
+	"FXSwitcher.h"
+	"FXTabBar.h"
+	"FXTabBook.h"
+	"FXTabItem.h"
+	"FXScrollBar.h"
+	"FXScrollArea.h"
+	"FXScrollWindow.h"
+	"FXList.h"
+	"FXComboBox.h"
+	"FXListBox.h"
+	"FXTreeList.h"
+	"FXTreeListBox.h"
+	"FXFoldingList.h"
+	"FXBitmapView.h"
+	"FXBitmapFrame.h"
+	"FXImageView.h"
+	"FXImageFrame.h"
+	"FXTable.h"
+	"FXDragCorner.h"
+	"FXStatusBar.h"
+	"FXStatusLine.h"
+	"FXChoiceBox.h"
+	"FXMessageBox.h"
+	"FXDirList.h"
+	"FXSlider.h"
+	"FXRealSlider.h"
+	"FXSplitter.h"
+	"FX4Splitter.h"
+	"FXHeader.h"
+	"FXShutter.h"
+	"FXIconList.h"
+	"FXFileList.h"
+	"FXDirBox.h"
+	"FXDriveBox.h"
+	"FXDirSelector.h"
+	"FXDirDialog.h"
+	"FXFileSelector.h"
+	"FXFileDialog.h"
+	"FXColorSelector.h"
+	"FXColorDialog.h"
+	"FXFontSelector.h"
+	"FXFontDialog.h"
+	"FXUndoList.h"
+	"FXRex.h"
+	"FXText.h"
+	"FXDataTarget.h"
+	"FXProgressBar.h"
+	"FXReplaceDialog.h"
+	"FXRuler.h"
+	"FXRulerView.h"
+	"FXSearchDialog.h"
+	"FXInputDialog.h"
+	"FXProgressDialog.h"
+	"FXWizard.h"
+	"FXMDIButton.h"
+	"FXMDIClient.h"
+	"FXMDIChild.h"
+	"FXDocument.h"
+	"FXDockSite.h"
+	"FXDockBar.h"
+	"FXToolBar.h"
+	"FXDockHandler.h"
+	"FXDockTitle.h"
+	"FXToolBarGrip.h"
+	"FXToolBarShell.h"
+	"FXToolBarTab.h"
+	"FXPrintDialog.h"
+	"FXDebugTarget.h"
+	"FXSplashWindow.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxver.h
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxdefs.h
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxascii.h
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxunicode.h
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxhash.h
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxexception.h
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxthread.h
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxstream.h
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxio.h
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxfile.h
+	"FXIO.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxpipe.h
+	"FXIO.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxsocket.h
+	"FXIO.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxfilestream.h
+	"FXStream.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxmemorystream.h
+	"FXStream.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxstring.h
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxsize.h
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxpoint.h
+	"FXSize.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxrectangle.h
+	"FXPoint.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxobject.h
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxdelegator.h
+	"FXObject.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxdict.h
+	"FXObject.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxpath.h
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxsystem.h
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxstat.h
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxdir.h
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxdate.h
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxurl.h
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxstringdict.h
+	"FXDict.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxsettings.h
+	"FXDict.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxregistry.h
+	"FXSettings.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxobjectlist.h
+	"FXObject.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxacceltable.h
+	"FXObject.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxrecentfiles.h
+	"FXObject.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxapp.h
+	"FXObject.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxid.h
+	"FXObject.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxvisual.h
+	"FXId.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxfont.h
+	"FXId.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxcursor.h
+	"FXId.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxguisignal.h
+	"FXObject.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxcurcursor.h
+	"FXCursor.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxgifcursor.h
+	"FXCursor.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxdrawable.h
+	"FXId.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxbitmap.h
+	"FXDrawable.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fximage.h
+	"FXDrawable.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxicon.h
+	"FXImage.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxgifimage.h
+	"FXImage.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxiffimage.h
+	"FXImage.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxbmpimage.h
+	"FXImage.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxicoimage.h
+	"FXImage.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxxbmimage.h
+	"FXImage.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxxpmimage.h
+	"FXImage.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxpcximage.h
+	"FXImage.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxtgaimage.h
+	"FXImage.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxrgbimage.h
+	"FXImage.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxppmimage.h
+	"FXImage.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxrasimage.h
+	"FXImage.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxgificon.h
+	"FXIcon.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxifficon.h
+	"FXIcon.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxbmpicon.h
+	"FXIcon.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxicoicon.h
+	"FXIcon.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxxbmicon.h
+	"FXIcon.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxxpmicon.h
+	"FXIcon.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxpcxicon.h
+	"FXIcon.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxtgaicon.h
+	"FXIcon.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxrgbicon.h
+	"FXIcon.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxppmicon.h
+	"FXIcon.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxrasicon.h
+	"FXIcon.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxregion.h
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxdc.h
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxdcwindow.h
+	"FXDC.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxdcprint.h
+	"FXDC.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxiconsource.h
+	"FXObject.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxicondict.h
+	"FXDict.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxfiledict.h
+	"FXDict.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxwindow.h
+	"FXDrawable.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxframe.h
+	"FXWindow.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxseparator.h
+	"FXFrame.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxlabel.h
+	"FXFrame.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fx7segment.h
+	"FXFrame.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxdial.h
+	"FXFrame.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxknob.h
+	"FXFrame.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxcolorbar.h
+	"FXFrame.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxcolorring.h
+	"FXFrame.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxcolorwell.h
+	"FXFrame.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxcolorwheel.h
+	"FXFrame.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxtextfield.h
+	"FXFrame.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxbutton.h
+	"FXLabel.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxpicker.h
+	"FXButton.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxtogglebutton.h
+	"FXLabel.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxtristatebutton.h
+	"FXToggleButton.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxcheckbutton.h
+	"FXLabel.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxradiobutton.h
+	"FXLabel.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxarrowbutton.h
+	"FXFrame.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxmenubutton.h
+	"FXLabel.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxcomposite.h
+	"FXWindow.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxpacker.h
+	"FXComposite.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxhorizontalframe.h
+	"FXPacker.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxverticalframe.h
+	"FXPacker.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxspring.h
+	"FXPacker.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxmatrix.h
+	"FXPacker.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxspinner.h
+	"FXPacker.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxrealspinner.h
+	"FXPacker.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxrootwindow.h
+	"FXComposite.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxcanvas.h
+	"FXWindow.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxgroupbox.h
+	"FXPacker.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxshell.h
+	"FXComposite.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxtooltip.h
+	"FXShell.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxpopup.h
+	"FXShell.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxtopwindow.h
+	"FXShell.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxdialogbox.h
+	"FXTopWindow.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxmainwindow.h
+	"FXTopWindow.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxmenupane.h
+	"FXPopup.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxscrollpane.h
+	"FXMenuPane.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxmenucaption.h
+	"FXWindow.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxmenuseparator.h
+	"FXWindow.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxmenutitle.h
+	"FXMenuCaption.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxmenucascade.h
+	"FXMenuCaption.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxmenucommand.h
+	"FXMenuCaption.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxmenucheck.h
+	"FXMenuCommand.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxmenuradio.h
+	"FXMenuCommand.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxmenubar.h
+	"FXToolBar.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxtoolbar.h
+	"FXDockBar.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxdockbar.h
+	"FXPacker.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxoptionmenu.h
+	"FXLabel.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxswitcher.h
+	"FXPacker.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxtabbar.h
+	"FXPacker.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxtabbook.h
+	"FXTabBar.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxtabitem.h
+	"FXLabel.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxscrollbar.h
+	"FXWindow.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxscrollarea.h
+	"FXComposite.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxscrollwindow.h
+	"FXScrollArea.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxlist.h
+	"FXScrollArea.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxcombobox.h
+	"FXPacker.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxlistbox.h
+	"FXPacker.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxtreelist.h
+	"FXScrollArea.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxtreelistbox.h
+	"FXPacker.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxfoldinglist.h
+	"FXScrollArea.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxbitmapview.h
+	"FXScrollArea.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxbitmapframe.h
+	"FXFrame.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fximageview.h
+	"FXScrollArea.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fximageframe.h
+	"FXFrame.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxtable.h
+	"FXScrollArea.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxdragcorner.h
+	"FXWindow.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxstatusbar.h
+	"FXHorizontalFrame.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxstatusline.h
+	"FXFrame.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxchoicebox.h
+	"FXDialogBox.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxmessagebox.h
+	"FXDialogBox.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxdirlist.h
+	"FXTreeList.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxslider.h
+	"FXFrame.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxrealslider.h
+	"FXFrame.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxsplitter.h
+	"FXComposite.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fx4splitter.h
+	"FXComposite.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxheader.h
+	"FXFrame.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxshutter.h
+	"FXVerticalFrame.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxiconlist.h
+	"FXScrollArea.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxfilelist.h
+	"FXIconList.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxdirbox.h
+	"FXTreeListBox.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxdrivebox.h
+	"FXListBox.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxdirselector.h
+	"FXPacker.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxdirdialog.h
+	"FXDialogBox.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxfileselector.h
+	"FXPacker.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxfiledialog.h
+	"FXDialogBox.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxcolorselector.h
+	"FXPacker.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxcolordialog.h
+	"FXDialogBox.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxfontselector.h
+	"FXPacker.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxfontdialog.h
+	"FXDialogBox.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxundolist.h
+	"FXObject.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxrex.h
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxtext.h
+	"FXScrollArea.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxdatatarget.h
+	"FXObject.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxprogressbar.h
+	"FXFrame.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxreplacedialog.h
+	"FXDialogBox.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxruler.h
+	"FXFrame.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxrulerview.h
+	"FXScrollArea.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxsearchdialog.h
+	"FXReplaceDialog.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxinputdialog.h
+	"FXDialogBox.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxprogressdialog.h
+	"FXDialogBox.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxwizard.h
+	"FXDialogBox.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxmdibutton.h
+	"FXButton.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxmdiclient.h
+	"FXComposite.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxmdichild.h
+	"FXComposite.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxdocument.h
+	"FXObject.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxdocksite.h
+	"FXPacker.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxdockhandler.h
+	"FXFrame.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxdocktitle.h
+	"FXDockHandler.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxtoolbargrip.h
+	"FXDockHandler.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxtoolbarshell.h
+	"FXTopWindow.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxtoolbartab.h
+	"FXFrame.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxprintdialog.h
+	"FXDialogBox.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxdebugtarget.h
+	"FXObject.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxsplashwindow.h
+	"FXTopWindow.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxarray.h
+	"FXElement.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxelement.h
+
+1732485653 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\frmcadextensao.h
+
+1732533886 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\frmcomparardiretorio.cpp
+	"resource.h"
+	"FrmCompararDiretorio.h"
+	"hfsguardadir/catalogador/catalogador.h"
+	"hfsguardadir/objetosbo/AbaBO.h"
+	"hfsguardadir/objetosbo/DiretorioBO.h"
+	"hfsguardadir/objetosgui/Dialogo.h"
+
+1732021814 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\frmcomparardiretorio.h
+	"hfsguardadir/objetosgui/Arvore.h"
+	"hfsguardadir/objetosgui/Tabela.h"
+	"hfsguardadir/comum/Rotinas.h"
+
+1732027115 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\frmimportardiretorio.cpp
+	"resource.h"
+	"FrmImportarDiretorio.h"
+	"hfsguardadir/catalogador/Catalogador.h"
+	"hfsguardadir/objetosbo/ImportarBO.h"
+	"hfsguardadir/objetosbo/DiretorioBO.h"
+	"hfsguardadir/objetosgui/Dialogo.h"
+
+1732026512 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\frmimportardiretorio.h
+	<FXText.h>
+	"hfsguardadir/objetos/Diretorio.h"
+	"hfsguardadir/objetos/Importar.h"
+	"hfsguardadir/comum/Rotinas.h"
+
+1732026560 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\frminfodiretorio.cpp
+	"resource.h"
+	"FrmInfoDiretorio.h"
+	"hfsguardadir/comum/Rotinas.h"
+
+1732017504 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\frminfodiretorio.h
+	"hfsguardadir/objetos/Diretorio.h"
+
+1732533568 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\frmprincipal.cpp
+	"resource.h"
+	"FrmPrincipal.h"
+	"hfsguardadir/comum/Rotinas.h"
+	"FrmSobre.h"
+	"FrmSplash.h"
+	"FrmCadExtensao.h"
+	"FrmCompararDiretorio.h"
+	"FrmImportarDiretorio.h"
+	"FrmInfoDiretorio.h"
+	"hfsguardadir/catalogador/Catalogador.h"
+	"hfsguardadir/objetosbo/ExtensaoBO.h"
+
+1732490614 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\frmprincipal.h
+	"hfsguardadir/objetosgui/Arvore.h"
+	"hfsguardadir/objetosgui/Tabela.h"
+
+1732017645 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\frmsobre.h
+
+1732029012 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\frmsplash.h
+	"hfsguardadir/comum/Rotinas.h"
+
+1732017701 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\frmsobre.cpp
+	"resource.h"
+	"FrmSobre.h"
+
+1732039771 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\frmsplash.cpp
+	"resource.h"
+	"FrmSplash.h"
+	<FXUTF8Codec.h>
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxutf8codec.h
+	"FXTextCodec.h"
+
+1672071004 c:\msys64\ucrt64\include\fox-1.6\fxtextcodec.h
+	"FXObject.h"
+
+1732042384 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\main.cpp
+	"resource.h"
+	"FrmPrincipal.h"
+	"hfsguardadir/comum/Rotinas.h"
+	"hfsguardadir/catalogador/Catalogador.h"
+
+1487863808 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\resource.cpp
+	"resource.h"
+
+1731938283 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\comum\rotinas.h
+	<string>
+	<vector>
+	"hfsguardadir/objetos/Arquivo.h"
+	"SQLite3Lib.h"
+
+1516878773 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetos\arquivo.h
+	<string>
+	"hfsguardadir/comum/DateTime.h"
+
+1516878773 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\comum\datetime.h
+	<string>
+	<ctime>
+
+1516878773 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\comum\sqlite3lib.h
+	<inttypes.h>
+
+1732040675 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\catalogador\catalogador.h
+	"hfsguardadir/objetos/Diretorio.h"
+	"hfsguardadir/objetos/DiretorioOrdem.h"
+	"hfsguardadir/objetos/Extensao.h"
+	"hfsguardadir/objetosgui/Tabela.h"
+	"hfsguardadir/objetosgui/Arvore.h"
+	"hfsguardadir/comum/Rotinas.h"
+	"hfsguardadir/catalogador/RotuloRaiz.h"
+	"FrmPrincipal.h"
+	"FrmImportarDiretorio.h"
+
+1516878773 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetos\diretorio.h
+	"Arquivo.h"
+	"Aba.h"
+	"Tipo.h"
+
+1731935260 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetos\aba.h
+	<string>
+
+1731935304 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetos\tipo.h
+	<string>
+
+1516878773 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetos\diretorioordem.h
+
+1731930225 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetos\extensao.h
+	<string>
+	"hfsguardadir/comum/Rotinas.h"
+
+1732037968 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetosgui\tabela.h
+	"resource.h"
+	"hfsguardadir/comum/Rotinas.h"
+	"hfsguardadir/objetos/Diretorio.h"
+	"hfsguardadir/objetos/Extensao.h"
+
+1732018945 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetosgui\arvore.h
+	"resource.h"
+	"hfsguardadir\comum\Rotinas.h"
+
+1516878773 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\catalogador\rotuloraiz.h
+	<string>
+
+1516878773 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetos\importar.h
+	<string>
+
+1731937628 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetosbo\extensaobo.h
+	"hfsguardadir/objetos/Extensao.h"
+	"hfsguardadir/objetos/Diretorio.h"
+	"hfsguardadir/comum/Rotinas.h"
+
+1731970343 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetosgui\escolhaarquivo.h
+	"hfsguardadir/comum/Rotinas.h"
+
+1732012004 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetosgui\dialogo.h
+	"resource.h"
+	"hfsguardadir/comum/Rotinas.h"
+
+1516878773 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetosbo\ababo.h
+	"hfsguardadir/objetos/Aba.h"
+	"hfsguardadir/comum/Rotinas.h"
+
+1516878773 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetosbo\diretoriobo.h
+	"hfsguardadir/objetos/Diretorio.h"
+	"hfsguardadir/objetos/DiretorioOrdem.h"
+	"hfsguardadir/comum/Rotinas.h"
+	"hfsguardadir/comum/DiretorioXML.h"
+
+1516878773 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\comum\diretorioxml.h
+	"hfsguardadir/objetos/Diretorio.h"
+
+1516878773 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetosbo\importarbo.h
+	"hfsguardadir/objetos/Importar.h"
+	"hfsguardadir/objetos/Extensao.h"
+	"hfsguardadir/objetos/Diretorio.h"
+	"hfsguardadir/objetos/DiretorioOrdem.h"
+	"hfsguardadir/comum/Rotinas.h"
+
+1516878773 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\catalogador\rotuloraiz.cpp
+	"RotuloRaiz.h"
+
+1516878773 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\comum\datetime.cpp
+	"DateTime.h"
+	"Rotinas.h"
+	<sstream>
+
+1732539557 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\catalogador\catalogador.cpp
+	<algorithm>
+	"resource.h"
+	"hfsguardadir\catalogador\Catalogador.h"
+	"FrmSplash.h"
+	"FrmInfoDiretorio.h"
+	"hfsguardadir/objetosbo/AbaBO.h"
+	"hfsguardadir/objetosbo/ExtensaoBO.h"
+	"hfsguardadir/objetosbo/DiretorioBO.h"
+	"hfsguardadir/objetosdao/VisaoDAO.h"
+	"hfsguardadir/objetosgui/Dialogo.h"
+	"hfsguardadir/objetosgui/EscolhaArquivo.h"
+	"hfsguardadir/objetos/Importar.h"
+
+1516878773 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetosdao\visaodao.h
+	"hfsguardadir/comum/Rotinas.h"
+
+1516878773 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\comum\diretorioxml.cpp
+	"DiretorioXML.h"
+
+1516878773 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\comum\sqlite3lib.cpp
+	"SQLite3Lib.h"
+
+1731935251 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetos\aba.cpp
+	"Aba.h"
+
+1516878773 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetos\arquivo.cpp
+	"Arquivo.h"
+	"hfsguardadir/comum/Rotinas.h"
+
+1516878773 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetos\conexaoparams.cpp
+	"ConexaoParams.h"
+
+1516878773 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetos\conexaoparams.h
+	<string>
+
+1731935268 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetos\diretorio.cpp
+	"Diretorio.h"
+
+1516878773 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetos\diretorioordem.cpp
+	"DiretorioOrdem.h"
+
+1516878773 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetos\extensao.cpp
+	"Extensao.h"
+
+1516878773 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetos\importar.cpp
+	"Importar.h"
+
+1731935297 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetos\tipo.cpp
+	"Tipo.h"
+
+1516878773 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetosbo\ababo.cpp
+	"AbaBO.h"
+	"hfsguardadir/objetosdao/AbaDAO.h"
+
+1516878773 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetosdao\abadao.h
+	"hfsguardadir/objetos/Aba.h"
+	"hfsguardadir/comum/Rotinas.h"
+	"hfsguardadir/comum/SQLite3Lib.h"
+
+1731929966 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetosbo\diretoriobo.cpp
+	"DiretorioBO.h"
+	"hfsguardadir/objetosdao/DiretorioDAO.h"
+	"hfsguardadir/objetosbo/AbaBO.h"
+
+1516878773 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetosdao\diretoriodao.h
+	"hfsguardadir/objetos/Diretorio.h"
+	"hfsguardadir/comum/Rotinas.h"
+	"hfsguardadir/comum/SQLite3Lib.h"
+
+1731937677 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetosbo\extensaobo.cpp
+	"ExtensaoBO.h"
+	"hfsguardadir/objetosdao/ExtensaoDAO.h"
+	"hfsguardadir/objetosbo/DiretorioBO.h"
+
+1516878773 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetosdao\extensaodao.h
+	"hfsguardadir/objetos/Extensao.h"
+	"hfsguardadir/comum/Rotinas.h"
+	"hfsguardadir/comum/SQLite3Lib.h"
+
+1516878773 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetosbo\importarbo.cpp
+	"ImportarBO.h"
+	"hfsguardadir/objetos/Arquivo.h"
+	"hfsguardadir/objetosbo/DiretorioBO.h"
+	"hfsguardadir/objetosbo/ExtensaoBO.h"
+
+1516878773 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetosdao\visaodao.cpp
+	"VisaoDAO.h"
+
+1732049607 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetosgui\arvore.cpp
+	"resource.h"
+	"hfsguardadir\objetosgui\Arvore.h"
+	<iostream>
+
+1732048073 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetosgui\dialogo.cpp
+	"hfsguardadir\objetosgui\Dialogo.h"
+	"resource.h"
+
+1731970353 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetosgui\escolhaarquivo.cpp
+	"resource.h"
+	"hfsguardadir\objetosgui\EscolhaArquivo.h"
+
+1732047945 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetosgui\tabela.cpp
+	"resource.h"
+	"hfsguardadir\objetosgui\Tabela.h"
+	"hfsguardadir/objetosbo/ExtensaoBO.h"
+
+1732539902 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetosdao\abadao.cpp
+	"AbaDAO.h"
+	"string.h"
+
+1732539931 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetosdao\diretoriodao.cpp
+	"DiretorioDAO.h"
+	"string.h"
+
+1732539949 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-foxtoolkit\hfsguardadir\objetosdao\extensaodao.cpp
+	"ExtensaoDAO.h"
+	"hfsguardadir/comum/Rotinas.h"
+	"string.h"
+

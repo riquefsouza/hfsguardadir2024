@@ -1,0 +1,233 @@
+# depslib dependency file v1.0
+1731927791 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir-cpp.cpp
+	<iostream>
+	<fstream>
+	"hfsguardadir/comum/Rotinas.h"
+	"hfsguardadir/catalogador/Catalogador.h"
+	"hfsguardadir/objetosdao/AbaDAO.h"
+
+1516795214 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\comum\rotinas.h
+	<string>
+	<vector>
+	"../objetos/Arquivo.h"
+	"sqlite3.h"
+
+1516731712 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetos\arquivo.h
+	<string>
+	"../comum/DateTime.h"
+
+1495459202 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\comum\datetime.h
+	<string>
+	<ctime>
+
+1516731745 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\catalogador\catalogador.h
+	"../objetos/Diretorio.h"
+	"../objetos/DiretorioOrdem.h"
+	"../objetos/Extensao.h"
+	"../objetosgui/Tabela.h"
+	"../objetosgui/Arvore.h"
+	"../comum/Rotinas.h"
+	"../catalogador/RotuloRaiz.h"
+
+1495459237 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetos\diretorio.h
+	"Arquivo.h"
+	"Aba.h"
+	"Tipo.h"
+
+1516794027 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetos\aba.h
+	<string>
+
+1516794050 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetos\tipo.h
+	<string>
+
+1495460304 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetos\diretorioordem.h
+
+1516731754 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetos\extensao.h
+	<string>
+	"../comum/Rotinas.h"
+
+1516731776 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetosgui\tabela.h
+	"../comum/Rotinas.h"
+	"../objetos/Diretorio.h"
+	"../objetos/Extensao.h"
+
+1516731788 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetosgui\arvore.h
+	"../comum/Rotinas.h"
+
+1495461196 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\catalogador\rotuloraiz.h
+	<string>
+
+1516795495 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetosdao\abadao.h
+	"../objetos/Aba.h"
+	"../comum/Rotinas.h"
+
+1516731815 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\catalogador\catalogador.cpp
+	"Catalogador.h"
+	"../objetosbo/AbaBO.h"
+	"../objetosbo/ExtensaoBO.h"
+	"../objetosbo/DiretorioBO.h"
+	"../objetosdao/VisaoDAO.h"
+	"../objetosgui/Dialogo.h"
+	"../objetosgui/EscolhaArquivo.h"
+	"../objetos/Importar.h"
+
+1516731829 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetosbo\ababo.h
+	"../objetos/Aba.h"
+	"../comum/Rotinas.h"
+
+1516731842 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetosbo\extensaobo.h
+	"../objetos/Extensao.h"
+	"../objetos/Diretorio.h"
+	"../comum/Rotinas.h"
+
+1516731858 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetosbo\diretoriobo.h
+	"../objetos/Diretorio.h"
+	"../objetos/DiretorioOrdem.h"
+	"../comum/Rotinas.h"
+	"../comum/DiretorioXML.h"
+
+1516731864 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\comum\diretorioxml.h
+	"../objetos/Diretorio.h"
+
+1516731868 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetosdao\visaodao.h
+	"../comum/Rotinas.h"
+
+1516731873 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetosgui\dialogo.h
+	"../comum/Rotinas.h"
+
+1516731879 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetosgui\escolhaarquivo.h
+	"../comum/Rotinas.h"
+
+1495461145 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetos\importar.h
+	<string>
+
+1495461212 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\catalogador\rotuloraiz.cpp
+	"RotuloRaiz.h"
+
+1516732226 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\comum\datetime.cpp
+	"DateTime.h"
+	"Rotinas.h"
+	<sstream>
+
+1493756952 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\comum\diretorioxml.cpp
+	"DiretorioXML.h"
+
+1516794033 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetos\aba.cpp
+	"Aba.h"
+
+1516793959 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetos\arquivo.cpp
+	"Arquivo.h"
+	"../comum/Rotinas.h"
+
+1495459148 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetos\conexaoparams.cpp
+	"ConexaoParams.h"
+
+1495459135 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetos\conexaoparams.h
+	<string>
+
+1516793975 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetos\diretorio.cpp
+	"Diretorio.h"
+
+1481890317 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetos\diretorioordem.cpp
+	"DiretorioOrdem.h"
+
+1495460286 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetos\extensao.cpp
+	"Extensao.h"
+
+1495461156 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetos\importar.cpp
+	"Importar.h"
+
+1516794046 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetos\tipo.cpp
+	"Tipo.h"
+
+1516794058 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetosbo\ababo.cpp
+	"AbaBO.h"
+	"../objetosdao/AbaDAO.h"
+
+1731927661 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetosbo\diretoriobo.cpp
+	"DiretorioBO.h"
+	"../objetosdao/DiretorioDAO.h"
+	"../objetosbo/AbaBO.h"
+
+1516795500 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetosdao\diretoriodao.h
+	"../objetos/Diretorio.h"
+	"../comum/Rotinas.h"
+
+1516794097 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetosbo\extensaobo.cpp
+	"ExtensaoBO.h"
+	"../objetosdao/ExtensaoDAO.h"
+	"../objetosbo/DiretorioBO.h"
+
+1516795505 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetosdao\extensaodao.h
+	"../objetos/Extensao.h"
+	"../comum/Rotinas.h"
+
+1516794124 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetosbo\importarbo.cpp
+	"ImportarBO.h"
+	"../objetos/Arquivo.h"
+	"../objetosbo/DiretorioBO.h"
+	"../objetosbo/ExtensaoBO.h"
+
+1516794117 c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetosbo\importarbo.h
+	"../objetos/Importar.h"
+	"../objetos/Extensao.h"
+	"../objetos/Diretorio.h"
+	"../objetos/DiretorioOrdem.h"
+	"../comum/Rotinas.h"
+
+1516794243 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetosdao\abadao.cpp
+	"AbaDAO.h"
+	"string.h"
+
+1516794267 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetosdao\diretoriodao.cpp
+	"DiretorioDAO.h"
+	"string.h"
+
+1516794303 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetosdao\extensaodao.cpp
+	"ExtensaoDAO.h"
+	"../comum/Rotinas.h"
+	"string.h"
+
+1495464483 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetosdao\visaodao.cpp
+	"VisaoDAO.h"
+
+1516794316 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetosgui\arvore.cpp
+	"../objetosgui/Arvore.h"
+
+1516794324 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetosgui\dialogo.cpp
+	"../objetosgui/Dialogo.h"
+
+1516794333 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetosgui\escolhaarquivo.cpp
+	"../objetosgui/EscolhaArquivo.h"
+
+1516794344 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\objetosgui\tabela.cpp
+	"../objetosgui/Tabela.h"
+	"../objetosbo/ExtensaoBO.h"
+
+1731934180 source:c:\hfsguardadir2024\wscodeblocks\hfsguardadir-cpp\hfsguardadir\comum\rotinas.cpp
+	"dirent.h"
+	<cwchar>
+	<cstdlib>
+	<cstdio>
+	<cctype>
+	<ctime>
+	<cerrno>
+	<iostream>
+	<sstream>
+	<fstream>
+	<iterator>
+	<algorithm>
+	<functional>
+	<string>
+	<locale>
+	<codecvt>
+	<unistd.h>
+	<sys/types.h>
+	<sys/stat.h>
+	"stdbool.h"
+	"stdlib.h"
+	"stdio.h"
+	"string.h"
+	"ctype.h"
+	"locale.h"
+

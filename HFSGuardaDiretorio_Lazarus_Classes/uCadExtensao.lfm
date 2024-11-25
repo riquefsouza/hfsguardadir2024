@@ -1,0 +1,131 @@
+object FrmCadExtensao: TFrmCadExtensao
+  Left = 372
+  Height = 398
+  Top = 111
+  Width = 290
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Cadastro de Extensão de Arquivo'
+  ClientHeight = 378
+  ClientWidth = 290
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Menu = MainMenu1
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.2.6.0'
+  object sgExtensao: TStringGrid
+    Left = 0
+    Height = 336
+    Top = 0
+    Width = 290
+    Align = alClient
+    ColCount = 2
+    DefaultColWidth = 100
+    DefaultRowHeight = 18
+    FixedCols = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goRowSelect]
+    RowCount = 2
+    TabOrder = 0
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    OnDrawCell = sgExtensaoDrawCell
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 42
+    Top = 336
+    Width = 290
+    Align = alBottom
+    ClientHeight = 42
+    ClientWidth = 290
+    TabOrder = 1
+    object btnIncluir: TButton
+      Left = 56
+      Height = 25
+      Top = 8
+      Width = 75
+      Caption = '&Incluir'
+      OnClick = IncluirExtensao1Click
+      TabOrder = 0
+    end
+    object btnExcluir: TButton
+      Left = 160
+      Height = 25
+      Top = 8
+      Width = 75
+      Caption = '&Excluir'
+      OnClick = ExcluirExtensao1Click
+      TabOrder = 1
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 'Todos os Arquivos (*.*)|*.*'
+    left = 56
+    top = 80
+  end
+  object MainMenu1: TMainMenu
+    left = 56
+    top = 152
+    object Extensao1: TMenuItem
+      Caption = 'Extensão'
+      object IncluirExtensao1: TMenuItem
+        Caption = 'Incluir Extensão'
+        OnClick = IncluirExtensao1Click
+      end
+      object ExcluirExtensao1: TMenuItem
+        Caption = 'Excluir Extensão'
+        OnClick = ExcluirExtensao1Click
+      end
+      object ExcluirTodasExtensoes1: TMenuItem
+        Caption = 'Excluir Todas Extensões'
+        OnClick = ExcluirTodasExtensoes1Click
+      end
+    end
+    object ExportarTodos1: TMenuItem
+      Caption = 'Exportar Todos'
+      object ExportarBitmap1: TMenuItem
+        Caption = 'Exportar para Bitmap'
+        OnClick = ExportarBitmap1Click
+      end
+      object ExportarIcone1: TMenuItem
+        Caption = 'Exportar para Ícone'
+        OnClick = ExportarIcone1Click
+      end
+      object ExportarGIF1: TMenuItem
+        Caption = 'Exportar para GIF'
+        OnClick = ExportarGIF1Click
+      end
+      object ExportarJPEG1: TMenuItem
+        Caption = 'Exportar para JPEG'
+        OnClick = ExportarJPEG1Click
+      end
+      object ExportarPNG1: TMenuItem
+        Caption = 'Exportar para PNG'
+        OnClick = ExportarPNG1Click
+      end
+      object ExportarTIFF1: TMenuItem
+        Caption = 'Exportar para TIFF'
+        OnClick = ExportarTIFF1Click
+      end
+    end
+    object ImportarTodos1: TMenuItem
+      Caption = 'Importar Todos'
+      object ImportarIconesArquivos1: TMenuItem
+        Caption = 'Importar Ícones dos Arquivos'
+        OnClick = ImportarIconesArquivos1Click
+      end
+      object ExtrairIconesArquivos1: TMenuItem
+        Caption = 'Extrair Ícones dos Arquivos'
+        OnClick = ExtrairIconesArquivos1Click
+      end
+    end
+  end
+  object escolherDir: TSelectDirectoryDialog
+    left = 160
+    top = 84
+  end
+end

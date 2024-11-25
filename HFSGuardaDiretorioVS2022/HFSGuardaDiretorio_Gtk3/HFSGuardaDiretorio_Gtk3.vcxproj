@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FrmCadExtensao.c" />
+    <ClCompile Include="FrmCompararDiretorio.c" />
+    <ClCompile Include="FrmImportarDiretorio.c" />
+    <ClCompile Include="FrmInfoDiretorio.c" />
+    <ClCompile Include="FrmPrincipal.c" />
+    <ClCompile Include="FrmSobre.c" />
+    <ClCompile Include="FrmSplash.c" />
+    <ClCompile Include="HFSGuardaDiretorio_Gtk3.c" />
+    <ClCompile Include="hfsguardadir\catalogador\Catalogador.c" />
+    <ClCompile Include="hfsguardadir\catalogador\RotuloRaiz.c" />
+    <ClCompile Include="hfsguardadir\comum\DateTime.c" />
+    <ClCompile Include="hfsguardadir\comum\ListaString.c" />
+    <ClCompile Include="hfsguardadir\comum\Rotinas.c" />
+    <ClCompile Include="hfsguardadir\comum\SQLite3Lib.c" />
+    <ClCompile Include="hfsguardadir\objetosbo\AbaBO.c" />
+    <ClCompile Include="hfsguardadir\objetosbo\DiretorioBO.c" />
+    <ClCompile Include="hfsguardadir\objetosbo\ExtensaoBO.c" />
+    <ClCompile Include="hfsguardadir\objetosbo\ImportarBO.c" />
+    <ClCompile Include="hfsguardadir\objetosdao\AbaDAO.c" />
+    <ClCompile Include="hfsguardadir\objetosdao\DiretorioDAO.c" />
+    <ClCompile Include="hfsguardadir\objetosdao\ExtensaoDAO.c" />
+    <ClCompile Include="hfsguardadir\objetosdao\VisaoDAO.c" />
+    <ClCompile Include="hfsguardadir\objetosgui\Arvore.c" />
+    <ClCompile Include="hfsguardadir\objetosgui\Dialogo.c" />
+    <ClCompile Include="hfsguardadir\objetosgui\EscolhaArquivo.c" />
+    <ClCompile Include="hfsguardadir\objetosgui\Tabela.c" />
+    <ClCompile Include="hfsguardadir\objetos\Aba.c" />
+    <ClCompile Include="hfsguardadir\objetos\Arquivo.c" />
+    <ClCompile Include="hfsguardadir\objetos\Diretorio.c" />
+    <ClCompile Include="hfsguardadir\objetos\DiretorioOrdem.c" />
+    <ClCompile Include="hfsguardadir\objetos\Extensao.c" />
+    <ClCompile Include="hfsguardadir\objetos\Importar.c" />
+    <ClCompile Include="hfsguardadir\objetos\Tipo.c" />
+    <ClCompile Include="resource.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FrmCadExtensao.h" />
+    <ClInclude Include="FrmCompararDiretorio.h" />
+    <ClInclude Include="FrmImportarDiretorio.h" />
+    <ClInclude Include="FrmInfoDiretorio.h" />
+    <ClInclude Include="FrmPrincipal.h" />
+    <ClInclude Include="FrmSobre.h" />
+    <ClInclude Include="FrmSplash.h" />
+    <ClInclude Include="HFSGuardaDiretorio.h" />
+    <ClInclude Include="hfsguardadir\catalogador\Catalogador.h" />
+    <ClInclude Include="hfsguardadir\catalogador\RotuloRaiz.h" />
+    <ClInclude Include="hfsguardadir\comum\DateTime.h" />
+    <ClInclude Include="hfsguardadir\comum\dirent.h" />
+    <ClInclude Include="hfsguardadir\comum\DiretorioXML.h" />
+    <ClInclude Include="hfsguardadir\comum\ListaString.h" />
+    <ClInclude Include="hfsguardadir\comum\Rotinas.h" />
+    <ClInclude Include="hfsguardadir\comum\SQLite3Lib.h" />
+    <ClInclude Include="hfsguardadir\objetosbo\AbaBO.h" />
+    <ClInclude Include="hfsguardadir\objetosbo\DiretorioBO.h" />
+    <ClInclude Include="hfsguardadir\objetosbo\ExtensaoBO.h" />
+    <ClInclude Include="hfsguardadir\objetosbo\ImportarBO.h" />
+    <ClInclude Include="hfsguardadir\objetosdao\AbaDAO.h" />
+    <ClInclude Include="hfsguardadir\objetosdao\DiretorioDAO.h" />
+    <ClInclude Include="hfsguardadir\objetosdao\ExtensaoDAO.h" />
+    <ClInclude Include="hfsguardadir\objetosdao\VisaoDAO.h" />
+    <ClInclude Include="hfsguardadir\objetosgui\Arvore.h" />
+    <ClInclude Include="hfsguardadir\objetosgui\Dialogo.h" />
+    <ClInclude Include="hfsguardadir\objetosgui\EscolhaArquivo.h" />
+    <ClInclude Include="hfsguardadir\objetosgui\Tabela.h" />
+    <ClInclude Include="hfsguardadir\objetos\Aba.h" />
+    <ClInclude Include="hfsguardadir\objetos\Arquivo.h" />
+    <ClInclude Include="hfsguardadir\objetos\Diretorio.h" />
+    <ClInclude Include="hfsguardadir\objetos\DiretorioOrdem.h" />
+    <ClInclude Include="hfsguardadir\objetos\Extensao.h" />
+    <ClInclude Include="hfsguardadir\objetos\Importar.h" />
+    <ClInclude Include="hfsguardadir\objetos\Tipo.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sqlite64\sqlite3.exp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="sqlite64\sqlite3.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="imagens\arquivo.gif" />
+    <Image Include="imagens\arquivo32.gif" />
+    <Image Include="imagens\cdouro.gif" />
+    <Image Include="imagens\cdprata.gif" />
+    <Image Include="imagens\dir-aberto.gif" />
+    <Image Include="imagens\dir-aberto32.gif" />
+    <Image Include="imagens\diretorio.gif" />
+    <Image Include="imagens\diretorio32.gif" />
+    <Image Include="imagens\splash.gif" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{165de5aa-d82c-466f-ae4d-21ba3e957b5c}</ProjectGuid>
+    <RootNamespace>HFSGuardaDiretorioGtk3</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(GTK3_HOME)\include\gtk-3.0;$(GTK3_HOME)\include\pango-1.0;$(GTK3_HOME)\include\harfbuzz;$(GTK3_HOME)\include;$(GTK3_HOME)\include\cairo;$(GTK3_HOME)\include\freetype2;$(GTK3_HOME)\include\libpng16;$(GTK3_HOME)\include\pixman-1;$(GTK3_HOME)\include\gdk-pixbuf-2.0;$(GTK3_HOME)\include\atk-1.0;$(GTK3_HOME)\include\fribidi;$(GTK3_HOME)\include\glib-2.0;$(GTK3_HOME)\lib\glib-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(GTK3_HOME)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gtk-3.lib;gdk-3.lib;gdi32.lib;imm32.lib;shell32.lib;ole32.lib;winmm.lib;dwmapi.lib;setupapi.lib;cfgmgr32.lib;hid.lib;winspool.lib;comctl32.lib;comdlg32.lib;pangocairo-1.0.lib;pangowin32-1.0.lib;pango-1.0.lib;harfbuzz.lib;cairo-gobject.lib;cairo.lib;gdk_pixbuf-2.0.lib;atk-1.0.lib;gio-2.0.lib;gobject-2.0.lib;glib-2.0.lib;intl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(GTK3_HOME)\include\gtk-3.0;$(GTK3_HOME)\include\pango-1.0;$(GTK3_HOME)\include\harfbuzz;$(GTK3_HOME)\include;$(GTK3_HOME)\include\cairo;$(GTK3_HOME)\include\freetype2;$(GTK3_HOME)\include\libpng16;$(GTK3_HOME)\include\pixman-1;$(GTK3_HOME)\include\gdk-pixbuf-2.0;$(GTK3_HOME)\include\atk-1.0;$(GTK3_HOME)\include\fribidi;$(GTK3_HOME)\include\glib-2.0;$(GTK3_HOME)\lib\glib-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(GTK3_HOME)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gtk-3.lib;gdk-3.lib;gdi32.lib;imm32.lib;shell32.lib;ole32.lib;winmm.lib;dwmapi.lib;setupapi.lib;cfgmgr32.lib;hid.lib;winspool.lib;comctl32.lib;comdlg32.lib;pangocairo-1.0.lib;pangowin32-1.0.lib;pango-1.0.lib;harfbuzz.lib;cairo-gobject.lib;cairo.lib;gdk_pixbuf-2.0.lib;atk-1.0.lib;gio-2.0.lib;gobject-2.0.lib;glib-2.0.lib;intl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(GTK3_HOME)\include\gtk-3.0;$(GTK3_HOME)\include\pango-1.0;$(GTK3_HOME)\include\harfbuzz;$(GTK3_HOME)\include;$(GTK3_HOME)\include\cairo;$(GTK3_HOME)\include\freetype2;$(GTK3_HOME)\include\libpng16;$(GTK3_HOME)\include\pixman-1;$(GTK3_HOME)\include\gdk-pixbuf-2.0;$(GTK3_HOME)\include\atk-1.0;$(GTK3_HOME)\include\fribidi;$(GTK3_HOME)\include\glib-2.0;$(GTK3_HOME)\lib\glib-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(GTK3_HOME)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gtk-3.lib;gdk-3.lib;gdi32.lib;imm32.lib;shell32.lib;ole32.lib;winmm.lib;dwmapi.lib;setupapi.lib;cfgmgr32.lib;hid.lib;winspool.lib;comctl32.lib;comdlg32.lib;pangocairo-1.0.lib;pangowin32-1.0.lib;pango-1.0.lib;harfbuzz.lib;cairo-gobject.lib;cairo.lib;gdk_pixbuf-2.0.lib;atk-1.0.lib;gio-2.0.lib;gobject-2.0.lib;glib-2.0.lib;intl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(GTK3_HOME)\include\gtk-3.0;$(GTK3_HOME)\include\pango-1.0;$(GTK3_HOME)\include\harfbuzz;$(GTK3_HOME)\include;$(GTK3_HOME)\include\cairo;$(GTK3_HOME)\include\freetype2;$(GTK3_HOME)\include\libpng16;$(GTK3_HOME)\include\pixman-1;$(GTK3_HOME)\include\gdk-pixbuf-2.0;$(GTK3_HOME)\include\atk-1.0;$(GTK3_HOME)\include\fribidi;$(GTK3_HOME)\include\glib-2.0;$(GTK3_HOME)\lib\glib-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(GTK3_HOME)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gtk-3.lib;gdk-3.lib;gdi32.lib;imm32.lib;shell32.lib;ole32.lib;winmm.lib;dwmapi.lib;setupapi.lib;cfgmgr32.lib;hid.lib;winspool.lib;comctl32.lib;comdlg32.lib;pangocairo-1.0.lib;pangowin32-1.0.lib;pango-1.0.lib;harfbuzz.lib;cairo-gobject.lib;cairo.lib;gdk_pixbuf-2.0.lib;atk-1.0.lib;gio-2.0.lib;gobject-2.0.lib;glib-2.0.lib;intl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

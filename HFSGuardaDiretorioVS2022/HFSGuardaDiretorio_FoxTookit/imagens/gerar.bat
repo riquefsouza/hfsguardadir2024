@@ -1,0 +1,1 @@
+reswrap -e -o imagens.txt Abrir.bmp Abrir32.bmp arquivo.bmp arquivo32.bmp cdouro.bmp cdprata.bmp Fechar.bmp Fechar32.bmp FotoRosto.bmp grandeicons.bmp listaicons.bmp relatorioicons.bmp smallicons.bmp splash.bmp zip.bmp zip32.bmp

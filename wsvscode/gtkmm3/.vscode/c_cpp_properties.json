@@ -1,0 +1,56 @@
+{
+    "configurations": [
+        {
+            "name": "hfsguardadirgtkmm4",
+            "includePath": [
+                "${workspaceFolder}/**",
+				"${workspaceFolder}/hfsguardadir/catalogador/**",
+				"${workspaceFolder}/hfsguardadir/comum/**",
+				"${workspaceFolder}/hfsguardadir/objetos/**",
+				"${workspaceFolder}/hfsguardadir/objetosbo/**",
+				"${workspaceFolder}/hfsguardadir/objetosdao/**",
+				"${workspaceFolder}/hfsguardadir/objetosgui/**",
+				"C:/msys64/ucrt64/include/gtkmm-3.0",
+				"C:/msys64/ucrt64/lib/gtkmm-3.0/include",
+				"C:/msys64/ucrt64/include/atkmm-1.6",
+				"C:/msys64/ucrt64/lib/atkmm-1.6/include",
+				"C:/msys64/ucrt64/include/gdkmm-3.0",
+				"C:/msys64/ucrt64/lib/gdkmm-3.0/include",
+				"C:/msys64/ucrt64/include/giomm-2.4",
+				"C:/msys64/ucrt64/lib/giomm-2.4/include",
+				"C:/msys64/ucrt64/include/gtk-3.0",
+				"C:/msys64/ucrt64/include/cairo",
+				"C:/msys64/ucrt64/include/atk-1.0",
+				"C:/msys64/ucrt64/include/pangomm-1.4",
+				"C:/msys64/ucrt64/lib/pangomm-1.4/include",
+				"C:/msys64/ucrt64/include/glibmm-2.4",
+				"C:/msys64/ucrt64/lib/glibmm-2.4/include",
+				"C:/msys64/ucrt64/include/cairomm-1.0",
+				"C:/msys64/ucrt64/lib/cairomm-1.0/include",
+				"C:/msys64/ucrt64/include/sigc++-2.0",
+				"C:/msys64/ucrt64/lib/sigc++-2.0/include",
+				"C:/msys64/ucrt64/include/pango-1.0",
+				"C:/msys64/ucrt64/include/pixman-1",
+				"C:/msys64/ucrt64/include/fribidi",
+				"C:/msys64/ucrt64/include/harfbuzz",
+				"C:/msys64/ucrt64/include/freetype2",
+				"C:/msys64/ucrt64/include/gdk-pixbuf-2.0",
+				"C:/msys64/ucrt64/include/libpng16",
+				"C:/msys64/ucrt64/include/webp",
+				"C:/msys64/ucrt64/include/glib-2.0",
+				"C:/msys64/ucrt64/lib/glib-2.0/include"
+            ],
+            "defines": [],
+            "compilerPath": "C:/msys64/ucrt64/bin/g++.exe",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerArgs": [
+                "-mfpmath=sse",
+                "-msse",
+                "-msse2"
+            ]            
+        }
+    ],
+    "version": 4
+}

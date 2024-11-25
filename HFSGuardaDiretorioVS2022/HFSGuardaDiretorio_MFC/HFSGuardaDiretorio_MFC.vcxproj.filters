@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HFSGuardaDiretorio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FrmPrincipal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hfsguardadir\comum\Rotinas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hfsguardadir\comum\DiretorioXML.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hfsguardadir\objetos\Aba.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hfsguardadir\objetos\Arquivo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hfsguardadir\objetos\ConexaoParams.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hfsguardadir\objetos\Diretorio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hfsguardadir\objetos\DiretorioOrdem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hfsguardadir\objetos\Extensao.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hfsguardadir\objetos\Importar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hfsguardadir\objetos\Tipo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FrmMDIFilho.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FrmFilho.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FrmCadExtensao.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FrmCompararDiretorio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FrmEntrada.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FrmImportarDiretorio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FrmInfoDiretorio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FrmSobre.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FrmSplash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hfsguardadir\objetosgui\Arvore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hfsguardadir\objetosgui\Tabela.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hfsguardadir\objetosgui\TabControle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hfsguardadir\objetosgui\Dialogo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hfsguardadir\objetosgui\EscolhaArquivo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hfsguardadir\objetosdao\AbaDAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hfsguardadir\objetosdao\VisaoDAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hfsguardadir\objetosdao\ExtensaoDAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hfsguardadir\objetosdao\DiretorioDAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hfsguardadir\objetosbo\AbaBO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hfsguardadir\objetosbo\DiretorioBO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hfsguardadir\objetosbo\ExtensaoBO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hfsguardadir\objetosbo\ImportarBO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hfsguardadir\catalogador\RotuloRaiz.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hfsguardadir\catalogador\Catalogador.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="HFSGuardaDiretorio_MFC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FrmPrincipal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsguardadir\comum\Rotinas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsguardadir\comum\DiretorioXML.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsguardadir\objetos\Aba.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsguardadir\objetos\Arquivo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsguardadir\objetos\ConexaoParams.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsguardadir\objetos\Diretorio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsguardadir\objetos\DiretorioOrdem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsguardadir\objetos\Extensao.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsguardadir\objetos\Importar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsguardadir\objetos\Tipo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FrmMDIFilho.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FrmFilho.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FrmCadExtensao.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FrmCompararDiretorio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FrmEntrada.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FrmImportarDiretorio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FrmInfoDiretorio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FrmSobre.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FrmSplash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsguardadir\objetosgui\Arvore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsguardadir\objetosgui\Tabela.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsguardadir\objetosgui\TabControle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsguardadir\objetosgui\Dialogo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsguardadir\objetosgui\EscolhaArquivo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsguardadir\objetosdao\AbaDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsguardadir\objetosdao\VisaoDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsguardadir\objetosdao\ExtensaoDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsguardadir\objetosdao\DiretorioDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsguardadir\objetosbo\AbaBO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsguardadir\objetosbo\DiretorioBO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsguardadir\objetosbo\ExtensaoBO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsguardadir\objetosbo\ImportarBO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsguardadir\catalogador\RotuloRaiz.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsguardadir\catalogador\Catalogador.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="HFSGuardaDiretorio.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\HFSGuardaDiretorio.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\sqlite3.exp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\HFSGuardaDiretorio.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="imagens\splash.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="imagens\arquivo.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="imagens\Fechar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="imagens\Abrir.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="imagens\arquivo32.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="imagens\Fechar32.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="imagens\Abrir32.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="imagens\cdouro.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="imagens\cdprata.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\sqlite3.lib" />
+  </ItemGroup>
+</Project>

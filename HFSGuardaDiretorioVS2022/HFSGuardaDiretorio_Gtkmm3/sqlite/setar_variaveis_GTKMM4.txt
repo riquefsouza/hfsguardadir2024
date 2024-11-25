@@ -1,0 +1,16 @@
+C:\GTK4_Gvsbuild_2024.11.1_x64\bin\pkg-config --cflags gtkmm-4.0 --msvc-syntax > C:\hfsguardadir2024\HFSGuardaDiretorioVS2022\HFSGuardaDiretorio_Gtkmm4\sqlite\compilerflags_gtkmm4.txt
+C:\GTK4_Gvsbuild_2024.11.1_x64\bin\pkg-config --libs gtkmm-4.0 --msvc-syntax > C:\hfsguardadir2024\HFSGuardaDiretorioVS2022\HFSGuardaDiretorio_Gtkmm4\sqlite\linkerflags_gtkmm4.txt
+
+
+SET GTK4_HOME = C:\GTK4_Gvsbuild_2024.11.1_x64
+
+
+.\GeneratedFiles;.;$(GTK4_HOME)\include\gtkmm-4.0;$(GTK4_HOME)\lib\gtkmm-4.0\include;$(GTK4_HOME)\include\gtk-4.0;$(GTK4_HOME)\include\cairo;$(GTK4_HOME)\include\graphene-1.0;$(GTK4_HOME)\lib\graphene-1.0\include;$(GTK4_HOME)\include\pangomm-2.48;$(GTK4_HOME)\lib\pangomm-2.48\include;$(GTK4_HOME)\include\giomm-2.68;$(GTK4_HOME)\lib\giomm-2.68\include;$(GTK4_HOME)\include\glibmm-2.68;$(GTK4_HOME)\lib\glibmm-2.68\include;$(GTK4_HOME)\include\cairomm-1.16;$(GTK4_HOME)\lib\cairomm-1.16\include;$(GTK4_HOME)\include\sigc++-3.0;$(GTK4_HOME)\lib\sigc++-3.0\include;$(GTK4_HOME)\include\pango-1.0;$(GTK4_HOME)\include\pixman-1;$(GTK4_HOME)\include\fribidi;$(GTK4_HOME)\include\harfbuzz;$(GTK4_HOME)\include\freetype2;$(GTK4_HOME)\include\libpng16;$(GTK4_HOME)\include\gdk-pixbuf-2.0;$(GTK4_HOME)\include\glib-2.0;$(GTK4_HOME)\lib\glib-2.0\include;%(AdditionalIncludeDirectories)  
+
+
+
+$(GTK4_HOME)\lib;%(AdditionalLibraryDirectories)
+
+
+gtkmm-vc143-4.0.lib;gtk-4.lib;cairo-gobject.lib;graphene-1.0.lib;pangomm-vc143-2.48.lib;giomm-vc143-2.68.lib;glibmm-vc143-2.68.lib;cairomm-vc143-1.16.lib;sigc-3.0.lib;pangocairo-1.0.lib;pangowin32-1.0.lib;pango-1.0.lib;cairo.lib;harfbuzz.lib;gdk_pixbuf-2.0.lib;gio-2.0.lib;gobject-2.0.lib;glib-2.0.lib;intl.lib;%(AdditionalDependencies)
+

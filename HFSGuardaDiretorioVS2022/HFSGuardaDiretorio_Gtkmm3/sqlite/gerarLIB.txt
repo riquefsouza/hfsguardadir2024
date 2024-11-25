@@ -1,0 +1,7 @@
+# ---------- CRIAR LIB FROM DLL --------------- #
+
+dumpbin /exports C:\hfsguardadir2024\HFSGuardaDiretorioVS2022\HFSGuardaDiretorio_Gtkmm4\sqlite\sqlite3.dll /out:C:\hfsguardadir2024\HFSGuardaDiretorioVS2022\HFSGuardaDiretorio_Gtkmm4\sqlite\sqlite3.def
+
+lib /MACHINE:X64 /def:C:\hfsguardadir2024\HFSGuardaDiretorioVS2022\HFSGuardaDiretorio_Gtkmm4\sqlite\sqlite3.def /OUT:C:\hfsguardadir2024\HFSGuardaDiretorioVS2022\HFSGuardaDiretorio_Gtkmm4\sqlite\sqlite3.lib
+
+

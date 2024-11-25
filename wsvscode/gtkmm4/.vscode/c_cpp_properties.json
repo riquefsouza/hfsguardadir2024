@@ -1,0 +1,47 @@
+{
+    "configurations": [
+        {
+            "name": "hfsguardadirgtkmm4",
+            "includePath": [
+                "${workspaceFolder}/**",
+				"C:/msys64/ucrt64/include/gtkmm-4.0",
+				"C:/msys64/ucrt64/lib/gtkmm-4.0/include",
+				"C:/msys64/ucrt64/include/gtk-4.0",
+				"C:/msys64/ucrt64/include/cairo",
+				"C:/msys64/ucrt64/include/graphene-1.0",
+				"C:/msys64/ucrt64/lib/graphene-1.0/include",
+				"C:/msys64/ucrt64/include/pangomm-2.48",
+				"C:/msys64/ucrt64/lib/pangomm-2.48/include",
+				"C:/msys64/ucrt64/include/giomm-2.68",
+				"C:/msys64/ucrt64/lib/giomm-2.68/include",
+				"C:/msys64/ucrt64/include/glibmm-2.68",
+				"C:/msys64/ucrt64/lib/glibmm-2.68/include",
+				"C:/msys64/ucrt64/include/cairomm-1.16",
+				"C:/msys64/ucrt64/lib/cairomm-1.16/include",
+				"C:/msys64/ucrt64/include/sigc++-3.0",
+				"C:/msys64/ucrt64/lib/sigc++-3.0/include",
+				"C:/msys64/ucrt64/include/pango-1.0",
+				"C:/msys64/ucrt64/include/pixman-1",
+				"C:/msys64/ucrt64/include/fribidi",
+				"C:/msys64/ucrt64/include/harfbuzz",
+				"C:/msys64/ucrt64/include/freetype2",
+				"C:/msys64/ucrt64/include/gdk-pixbuf-2.0",
+				"C:/msys64/ucrt64/include/libpng16",
+				"C:/msys64/ucrt64/include/webp",
+				"C:/msys64/ucrt64/include/glib-2.0",
+				"C:/msys64/ucrt64/lib/glib-2.0/include"               
+            ],
+            "defines": [],
+            "compilerPath": "C:/msys64/ucrt64/bin/g++.exe",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerArgs": [
+                "-mfpmath=sse",
+                "-msse",
+                "-msse2"
+            ]            
+        }
+    ],
+    "version": 4
+}

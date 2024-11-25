@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FrmPrincipal</class>
+ <widget class="QMainWindow" name="FrmPrincipal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>924</width>
+    <height>546</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>HFSGuardaDiretorio 2.0 - Catalogador de Diretórios</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>924</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Aba">
+    <property name="title">
+     <string>&amp;Aba</string>
+    </property>
+    <addaction name="actionIncluirNovaAba"/>
+    <addaction name="actionAlterarNomeAbaAtiva"/>
+    <addaction name="actionExcluirAbaAtiva"/>
+   </widget>
+   <widget class="QMenu" name="menu_Diretorio">
+    <property name="title">
+     <string>&amp;Diretório</string>
+    </property>
+    <widget class="QMenu" name="menuExportar_Diretorios_da_Aba_Ativa">
+     <property name="title">
+      <string>Exportar Diretórios da Aba Ativa</string>
+     </property>
+     <addaction name="actionTXT"/>
+     <addaction name="actionCSV"/>
+     <addaction name="actionHTML"/>
+     <addaction name="actionXML"/>
+     <addaction name="actionSQL"/>
+    </widget>
+    <addaction name="actionImportarDiretorio"/>
+    <addaction name="actionImportarSubDiretorios"/>
+    <addaction name="actionCompararDiretorios"/>
+    <addaction name="actionCadastrarExtensaoArquivo"/>
+    <addaction name="separator"/>
+    <addaction name="actionExpandirDiretorios"/>
+    <addaction name="actionColapsarDiretorios"/>
+    <addaction name="menuExportar_Diretorios_da_Aba_Ativa"/>
+    <addaction name="actionImportarDiretoriosViaXML"/>
+    <addaction name="actionGravarLogImportacao"/>
+   </widget>
+   <widget class="QMenu" name="menu_Visao">
+    <property name="title">
+     <string>&amp;Visão</string>
+    </property>
+    <addaction name="actionMostrarOcultarArvoreDirAbaAtiva"/>
+    <addaction name="actionMostrarOcultarListaItensPesquisados"/>
+   </widget>
+   <widget class="QMenu" name="menu_Sobre">
+    <property name="title">
+     <string>&amp;Sobre</string>
+    </property>
+    <addaction name="actionSobreCatalogador"/>
+   </widget>
+   <addaction name="menu_Aba"/>
+   <addaction name="menu_Diretorio"/>
+   <addaction name="menu_Visao"/>
+   <addaction name="menu_Sobre"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionIncluirNovaAba">
+   <property name="text">
+    <string>Incluir Nova Aba</string>
+   </property>
+  </action>
+  <action name="actionAlterarNomeAbaAtiva">
+   <property name="text">
+    <string>Alterar Nome da Aba Ativa</string>
+   </property>
+  </action>
+  <action name="actionExcluirAbaAtiva">
+   <property name="text">
+    <string>Excluir Aba Ativa</string>
+   </property>
+  </action>
+  <action name="actionImportarDiretorio">
+   <property name="text">
+    <string>Importar Diretório</string>
+   </property>
+  </action>
+  <action name="actionImportarSubDiretorios">
+   <property name="text">
+    <string>Importar SubDiretórios</string>
+   </property>
+  </action>
+  <action name="actionCompararDiretorios">
+   <property name="text">
+    <string>Comparar Diretórios</string>
+   </property>
+  </action>
+  <action name="actionCadastrarExtensaoArquivo">
+   <property name="text">
+    <string>Cadastrar Extensão de Arquivo</string>
+   </property>
+  </action>
+  <action name="actionExpandirDiretorios">
+   <property name="text">
+    <string>Expandir Diretórios</string>
+   </property>
+  </action>
+  <action name="actionColapsarDiretorios">
+   <property name="text">
+    <string>Colapsar Diretórios</string>
+   </property>
+  </action>
+  <action name="actionTXT">
+   <property name="text">
+    <string>TXT</string>
+   </property>
+  </action>
+  <action name="actionCSV">
+   <property name="text">
+    <string>CSV</string>
+   </property>
+  </action>
+  <action name="actionHTML">
+   <property name="text">
+    <string>HTML</string>
+   </property>
+  </action>
+  <action name="actionXML">
+   <property name="text">
+    <string>XML</string>
+   </property>
+  </action>
+  <action name="actionSQL">
+   <property name="text">
+    <string>SQL</string>
+   </property>
+  </action>
+  <action name="actionImportarDiretoriosViaXML">
+   <property name="text">
+    <string>Importar Diretórios via XML</string>
+   </property>
+  </action>
+  <action name="actionGravarLogImportacao">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Gravar Log da Importação</string>
+   </property>
+  </action>
+  <action name="actionMostrarOcultarArvoreDirAbaAtiva">
+   <property name="text">
+    <string>Mostrar/Ocultar árvore de diretórios da Aba Ativa</string>
+   </property>
+  </action>
+  <action name="actionMostrarOcultarListaItensPesquisados">
+   <property name="text">
+    <string>Mostrar/Ocultar lista de itens pesquisados</string>
+   </property>
+  </action>
+  <action name="actionSobreCatalogador">
+   <property name="text">
+    <string>Sobre o Catalogador</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

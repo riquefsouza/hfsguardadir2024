@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "hfsguardadirgtkmm4",
+            "includePath": [
+                "${workspaceFolder}/**",
+				"C:/msys64/ucrt64/lib/wx/include/msw-unicode-3.2",
+				"C:/msys64/ucrt64/include/wx-3.2"
+            ],
+            "defines": [],
+            "compilerPath": "C:/msys64/ucrt64/bin/g++.exe",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerArgs": [
+                "-mfpmath=sse",
+                "-msse",
+                "-msse2"
+            ]            
+        }
+    ],
+    "version": 4
+}

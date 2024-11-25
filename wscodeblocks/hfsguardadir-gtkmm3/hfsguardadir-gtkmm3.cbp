@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="hfsguardadir-gtkmm3" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/hfsguardadir-gtkmm3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<LinkerExe value="CppCompiler" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/hfsguardadir-gtkmm3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<LinkerExe value="CppCompiler" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="`pkg-config gtkmm-3.0 --cflags`" />
+			<Add directory="." />
+		</Compiler>
+		<Linker>
+			<Add option="`pkg-config gtkmm-3.0 --libs`" />
+			<Add library="sqlite3" />
+		</Linker>
+		<Unit filename="FrmCadExtensao.cpp" />
+		<Unit filename="FrmCadExtensao.h" />
+		<Unit filename="FrmCompararDiretorio.cpp" />
+		<Unit filename="FrmCompararDiretorio.h" />
+		<Unit filename="FrmImportarDiretorio.cpp" />
+		<Unit filename="FrmImportarDiretorio.h" />
+		<Unit filename="FrmInfoDiretorio.cpp" />
+		<Unit filename="FrmInfoDiretorio.h" />
+		<Unit filename="FrmPrincipal.cpp" />
+		<Unit filename="FrmPrincipal.h" />
+		<Unit filename="FrmSobre.cpp" />
+		<Unit filename="FrmSobre.h" />
+		<Unit filename="FrmSplash.cpp" />
+		<Unit filename="FrmSplash.h" />
+		<Unit filename="MenuPopup.cpp" />
+		<Unit filename="MenuPopup.h" />
+		<Unit filename="hfsguardadir/catalogador/Catalogador.cpp" />
+		<Unit filename="hfsguardadir/catalogador/Catalogador.h" />
+		<Unit filename="hfsguardadir/catalogador/RotuloRaiz.cpp" />
+		<Unit filename="hfsguardadir/catalogador/RotuloRaiz.h" />
+		<Unit filename="hfsguardadir/comum/DateTime.cpp" />
+		<Unit filename="hfsguardadir/comum/DateTime.h" />
+		<Unit filename="hfsguardadir/comum/DiretorioXML.cpp" />
+		<Unit filename="hfsguardadir/comum/DiretorioXML.h" />
+		<Unit filename="hfsguardadir/comum/Rotinas.cpp" />
+		<Unit filename="hfsguardadir/comum/Rotinas.h" />
+		<Unit filename="hfsguardadir/objetos/Aba.cpp" />
+		<Unit filename="hfsguardadir/objetos/Aba.h" />
+		<Unit filename="hfsguardadir/objetos/Arquivo.cpp" />
+		<Unit filename="hfsguardadir/objetos/Arquivo.h" />
+		<Unit filename="hfsguardadir/objetos/ConexaoParams.cpp" />
+		<Unit filename="hfsguardadir/objetos/ConexaoParams.h" />
+		<Unit filename="hfsguardadir/objetos/Diretorio.cpp" />
+		<Unit filename="hfsguardadir/objetos/Diretorio.h" />
+		<Unit filename="hfsguardadir/objetos/DiretorioOrdem.cpp" />
+		<Unit filename="hfsguardadir/objetos/DiretorioOrdem.h" />
+		<Unit filename="hfsguardadir/objetos/Extensao.cpp" />
+		<Unit filename="hfsguardadir/objetos/Extensao.h" />
+		<Unit filename="hfsguardadir/objetos/Importar.cpp" />
+		<Unit filename="hfsguardadir/objetos/Importar.h" />
+		<Unit filename="hfsguardadir/objetos/Tipo.cpp" />
+		<Unit filename="hfsguardadir/objetos/Tipo.h" />
+		<Unit filename="hfsguardadir/objetosbo/AbaBO.cpp" />
+		<Unit filename="hfsguardadir/objetosbo/AbaBO.h" />
+		<Unit filename="hfsguardadir/objetosbo/DiretorioBO.cpp" />
+		<Unit filename="hfsguardadir/objetosbo/DiretorioBO.h" />
+		<Unit filename="hfsguardadir/objetosbo/ExtensaoBO.cpp" />
+		<Unit filename="hfsguardadir/objetosbo/ExtensaoBO.h" />
+		<Unit filename="hfsguardadir/objetosbo/ImportarBO.cpp" />
+		<Unit filename="hfsguardadir/objetosbo/ImportarBO.h" />
+		<Unit filename="hfsguardadir/objetosdao/AbaDAO.cpp" />
+		<Unit filename="hfsguardadir/objetosdao/AbaDAO.h" />
+		<Unit filename="hfsguardadir/objetosdao/DiretorioDAO.cpp" />
+		<Unit filename="hfsguardadir/objetosdao/DiretorioDAO.h" />
+		<Unit filename="hfsguardadir/objetosdao/ExtensaoDAO.cpp" />
+		<Unit filename="hfsguardadir/objetosdao/ExtensaoDAO.h" />
+		<Unit filename="hfsguardadir/objetosdao/VisaoDAO.cpp" />
+		<Unit filename="hfsguardadir/objetosdao/VisaoDAO.h" />
+		<Unit filename="hfsguardadir/objetosgui/Arvore.cpp" />
+		<Unit filename="hfsguardadir/objetosgui/Arvore.h" />
+		<Unit filename="hfsguardadir/objetosgui/Dialogo.cpp" />
+		<Unit filename="hfsguardadir/objetosgui/Dialogo.h" />
+		<Unit filename="hfsguardadir/objetosgui/EscolhaArquivo.cpp" />
+		<Unit filename="hfsguardadir/objetosgui/EscolhaArquivo.h" />
+		<Unit filename="hfsguardadir/objetosgui/Tabela.cpp" />
+		<Unit filename="hfsguardadir/objetosgui/Tabela.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="resource.cpp" />
+		<Unit filename="resource.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

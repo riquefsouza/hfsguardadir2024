@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0C4C7DA3-8ACA-4F0E-B330-BD9870B9270A}</ProjectGuid>
+    <RootNamespace>HFSGuardaDiretorioMFC</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FrmCadExtensao.h" />
+    <ClInclude Include="FrmCompararDiretorio.h" />
+    <ClInclude Include="FrmEntrada.h" />
+    <ClInclude Include="FrmFilho.h" />
+    <ClInclude Include="FrmImportarDiretorio.h" />
+    <ClInclude Include="FrmInfoDiretorio.h" />
+    <ClInclude Include="FrmMDIFilho.h" />
+    <ClInclude Include="FrmPrincipal.h" />
+    <ClInclude Include="FrmSobre.h" />
+    <ClInclude Include="FrmSplash.h" />
+    <ClInclude Include="HFSGuardaDiretorio.h" />
+    <ClInclude Include="hfsguardadir\catalogador\Catalogador.h" />
+    <ClInclude Include="hfsguardadir\catalogador\RotuloRaiz.h" />
+    <ClInclude Include="hfsguardadir\comum\DiretorioXML.h" />
+    <ClInclude Include="hfsguardadir\comum\Rotinas.h" />
+    <ClInclude Include="hfsguardadir\objetosbo\AbaBO.h" />
+    <ClInclude Include="hfsguardadir\objetosbo\DiretorioBO.h" />
+    <ClInclude Include="hfsguardadir\objetosbo\ExtensaoBO.h" />
+    <ClInclude Include="hfsguardadir\objetosbo\ImportarBO.h" />
+    <ClInclude Include="hfsguardadir\objetosdao\AbaDAO.h" />
+    <ClInclude Include="hfsguardadir\objetosdao\DiretorioDAO.h" />
+    <ClInclude Include="hfsguardadir\objetosdao\ExtensaoDAO.h" />
+    <ClInclude Include="hfsguardadir\objetosdao\VisaoDAO.h" />
+    <ClInclude Include="hfsguardadir\objetosgui\Arvore.h" />
+    <ClInclude Include="hfsguardadir\objetosgui\Dialogo.h" />
+    <ClInclude Include="hfsguardadir\objetosgui\EscolhaArquivo.h" />
+    <ClInclude Include="hfsguardadir\objetosgui\TabControle.h" />
+    <ClInclude Include="hfsguardadir\objetosgui\Tabela.h" />
+    <ClInclude Include="hfsguardadir\objetos\Aba.h" />
+    <ClInclude Include="hfsguardadir\objetos\Arquivo.h" />
+    <ClInclude Include="hfsguardadir\objetos\ConexaoParams.h" />
+    <ClInclude Include="hfsguardadir\objetos\Diretorio.h" />
+    <ClInclude Include="hfsguardadir\objetos\DiretorioOrdem.h" />
+    <ClInclude Include="hfsguardadir\objetos\Extensao.h" />
+    <ClInclude Include="hfsguardadir\objetos\Importar.h" />
+    <ClInclude Include="hfsguardadir\objetos\Tipo.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FrmCadExtensao.cpp" />
+    <ClCompile Include="FrmCompararDiretorio.cpp" />
+    <ClCompile Include="FrmEntrada.cpp" />
+    <ClCompile Include="FrmFilho.cpp" />
+    <ClCompile Include="FrmImportarDiretorio.cpp" />
+    <ClCompile Include="FrmInfoDiretorio.cpp" />
+    <ClCompile Include="FrmMDIFilho.cpp" />
+    <ClCompile Include="FrmPrincipal.cpp" />
+    <ClCompile Include="FrmSobre.cpp" />
+    <ClCompile Include="FrmSplash.cpp" />
+    <ClCompile Include="HFSGuardaDiretorio_MFC.cpp" />
+    <ClCompile Include="hfsguardadir\catalogador\Catalogador.cpp" />
+    <ClCompile Include="hfsguardadir\catalogador\RotuloRaiz.cpp" />
+    <ClCompile Include="hfsguardadir\comum\DiretorioXML.cpp" />
+    <ClCompile Include="hfsguardadir\comum\Rotinas.cpp" />
+    <ClCompile Include="hfsguardadir\objetosbo\AbaBO.cpp" />
+    <ClCompile Include="hfsguardadir\objetosbo\DiretorioBO.cpp" />
+    <ClCompile Include="hfsguardadir\objetosbo\ExtensaoBO.cpp" />
+    <ClCompile Include="hfsguardadir\objetosbo\ImportarBO.cpp" />
+    <ClCompile Include="hfsguardadir\objetosdao\AbaDAO.cpp" />
+    <ClCompile Include="hfsguardadir\objetosdao\DiretorioDAO.cpp" />
+    <ClCompile Include="hfsguardadir\objetosdao\ExtensaoDAO.cpp" />
+    <ClCompile Include="hfsguardadir\objetosdao\VisaoDAO.cpp" />
+    <ClCompile Include="hfsguardadir\objetosgui\Arvore.cpp" />
+    <ClCompile Include="hfsguardadir\objetosgui\Dialogo.cpp" />
+    <ClCompile Include="hfsguardadir\objetosgui\EscolhaArquivo.cpp" />
+    <ClCompile Include="hfsguardadir\objetosgui\TabControle.cpp" />
+    <ClCompile Include="hfsguardadir\objetosgui\Tabela.cpp" />
+    <ClCompile Include="hfsguardadir\objetos\Aba.cpp" />
+    <ClCompile Include="hfsguardadir\objetos\Arquivo.cpp" />
+    <ClCompile Include="hfsguardadir\objetos\ConexaoParams.cpp" />
+    <ClCompile Include="hfsguardadir\objetos\Diretorio.cpp" />
+    <ClCompile Include="hfsguardadir\objetos\DiretorioOrdem.cpp" />
+    <ClCompile Include="hfsguardadir\objetos\Extensao.cpp" />
+    <ClCompile Include="hfsguardadir\objetos\Importar.cpp" />
+    <ClCompile Include="hfsguardadir\objetos\Tipo.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="HFSGuardaDiretorio.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sqlite64\sqlite3.exp" />
+    <None Include="res\HFSGuardaDiretorio.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="imagens\Abrir.bmp" />
+    <Image Include="imagens\Abrir32.bmp" />
+    <Image Include="imagens\arquivo.bmp" />
+    <Image Include="imagens\arquivo32.bmp" />
+    <Image Include="imagens\cdouro.bmp" />
+    <Image Include="imagens\cdprata.bmp" />
+    <Image Include="imagens\Fechar.bmp" />
+    <Image Include="imagens\Fechar32.bmp" />
+    <Image Include="imagens\splash.bmp" />
+    <Image Include="res\HFSGuardaDiretorio.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="sqlite64\sqlite3.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="HFSGuardaDiretorio.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

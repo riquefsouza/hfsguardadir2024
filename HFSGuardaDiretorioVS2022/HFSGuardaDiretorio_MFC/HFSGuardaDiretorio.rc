@@ -1,0 +1,849 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Inglês (Estados Unidos) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_HFSGUARDADIRETORIO  ICON                    "res\\HFSGuardaDiretorio.ico"
+
+IDR_MAINFRAME           ICON                    "res\\HFSGuardaDiretorio.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+BITMAP_SPLASH           BITMAP                  "imagens/splash.bmp"
+
+ARQUIVO                 BITMAP                  "imagens/arquivo.bmp"
+
+DIRETORIO               BITMAP                  "imagens/Fechar.bmp"
+
+DIRABERTO               BITMAP                  "imagens/Abrir.bmp"
+
+ARQUIVO32               BITMAP                  "imagens/arquivo32.bmp"
+
+DIRETORIO32             BITMAP                  "imagens/Fechar32.bmp"
+
+DIRABERTO32             BITMAP                  "imagens/Abrir32.bmp"
+
+CDOURO                  BITMAP                  "imagens/cdouro.bmp"
+
+CDPRATA                 BITMAP                  "imagens/cdprata.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_HFSGUARDADIRETORIO MENU
+BEGIN
+    POPUP "&Aba"
+    BEGIN
+        MENUITEM "Incluir Nova Aba",            IDM_INCLUIR_NOVA_ABA
+        MENUITEM "Alterar Nome da Aba Ativa",   IDM_ALTERAR_NOME_ABA_ATIVA
+        MENUITEM "Excluir Aba Ativa",           IDM_EXCLUIR_ABA_ATIVA
+    END
+    POPUP "&Diretório"
+    BEGIN
+        MENUITEM "Importar Diretório",          IDM_IMPORTAR_DIRETORIO
+        MENUITEM "Importar SubDiretórios",      IDM_IMPORTAR_SUBDIRETORIOS
+        MENUITEM "Comparar Diretórios",         IDM_COMPARAR_DIRETORIOS
+        MENUITEM "Cadastrar Extensão de Arquivo", IDM_CADASTRAR_EXTENSAO_ARQUIVO
+        MENUITEM SEPARATOR
+        MENUITEM "Expandir Diretórios",         IDM_EXPANDIR_DIRETORIOS
+        MENUITEM "Colapsar Diretórios",         IDM_COLAPSAR_DIRETORIOS
+        POPUP "Exportar Diretórios da Aba Ativa"
+        BEGIN
+            MENUITEM "TXT",                         IDM_TXT
+            MENUITEM "CSV",                         IDM_CSV
+            MENUITEM "HTML",                        IDM_HTML
+            MENUITEM "XML",                         IDM_XML
+            MENUITEM "SQL",                         IDM_SQL
+        END
+        MENUITEM "Importar Diretórios via XML", IDM_IMPORTAR_DIRETORIOS_VIA_XML
+        MENUITEM "Gravar Log da Importação",    IDM_GRAVAR_LOG_IMPORTACAO
+    END
+    POPUP "&Visão"
+    BEGIN
+        MENUITEM "Mostrar/Ocultar Árvore de diretórios da Aba Ativa", IDM_MOSTRAR_OCULTAR_ARVORE_DIR_ABA_ATIVA
+        MENUITEM "Mostrar/Ocultar lista de itens pesquisados", IDM_MOSTRAR_OCULTAR_LISTA_ITENS_PESQUISADOS
+        POPUP "Modo de Exibição"
+        BEGIN
+            MENUITEM "Ícones",                      IDM_ICONES
+            MENUITEM "Lista",                       IDM_LISTA
+            MENUITEM "Detalhes",                    IDM_DETALHES
+            MENUITEM "Ícones Pequenos",             IDM_ICONES_PEQUENOS
+        END
+    END
+    POPUP "&Sobre"
+    BEGIN
+        MENUITEM "&Sobre o Catalogador",        IDM_SOBRE
+    END
+END
+
+IDM_CADEXTENSAO MENU
+BEGIN
+    POPUP "&Extensão"
+    BEGIN
+        MENUITEM "Incluir Extensão",            IDM_INCLUIR_EXTENSAO
+        MENUITEM "Excluir Extensão",            IDM_EXCLUIR_EXTENSAO
+        MENUITEM "Excluir Todas Extensões",     IDM_EXCLUIR_TODAS_EXTENSOES
+    END
+    POPUP "Exportar &Todos"
+    BEGIN
+        MENUITEM "Exportar para Bitmap",        IDM_EXPORTAR_BITMAP
+        MENUITEM "Exportar para Ícone",         IDM_EXPORTAR_ICONE
+        MENUITEM "Exportar para GIF",           IDM_EXPORTAR_GIF
+        MENUITEM "Exportar para JPEG",          IDM_EXPORTAR_JPEG
+        MENUITEM "Exportar para PNG",           IDM_EXPORTAR_PNG
+        MENUITEM "Exportar para TIFF",          IDM_EXPORTAR_TIFF
+    END
+    POPUP "&Importar Todos"
+    BEGIN
+        MENUITEM "Importar Ícones dos Arquivos", IDM_IMPORTAR_ICONES_ARQUIVOS
+        MENUITEM "Extrair Ícones dos Arquivos", IDM_EXTRAIR_ICONES_ARQUIVOS
+    END
+END
+
+IDM_POPUP MENU
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "Informações do Diretório / Arquivo", IDM_INFORMACOES_DIRETORIO_ARQUIVO
+        MENUITEM "Excluir Diretório Selecionado", IDM_EXCLUIR_DIRETORIO_SELECIONADO
+        MENUITEM "Expandir Diretórios",         IDM_EXPANDIR_DIRETORIOS
+        MENUITEM "Colapsar Diretórios",         IDM_COLAPSAR_DIRETORIOS
+        MENUITEM SEPARATOR
+        MENUITEM "Incluir Nova Aba",            IDM_INCLUIR_NOVA_ABA
+        MENUITEM "Alterar Nome da Aba Ativa",   IDM_ALTERAR_NOME_ABA_ATIVA
+        MENUITEM "Excluir Aba Ativa",           IDM_EXCLUIR_ABA_ATIVA
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+BARRAPESQUISAR DIALOGEX 0, 0, 608, 22
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "&Importar Diretório",ID_FRMPRINCIPAL_BTNIMPORTARDIRETORIO,8,2,78,17
+    PUSHBUTTON      "&Pesquisar",ID_FRMPRINCIPAL_BTNPESQUISAR,549,2,50,17
+    CONTROL         "",ID_FRMPRINCIPAL_PB,"msctls_progress32",WS_BORDER,89,4,234,12
+    EDITTEXT        ID_FRMPRINCIPAL_EDTPESQUISA,325,4,221,13
+END
+
+FRMSPLASH DIALOGEX 30, 30, 211, 52
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         BITMAP_SPLASH,ID_FRMSPLASH_LABFIGURA,"Static",SS_BITMAP,14,3,168,32
+    CONTROL         "",ID_FRMSPLASH_PB,"msctls_progress32",WS_BORDER,0,40,211,12
+END
+
+FRMSOBRE DIALOGEX 22, 17, 209, 82
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_CAPTION | WS_SYSMENU
+CAPTION "Sobre o Catalogador"
+FONT 8, "MS Sans Serif", 400, 0, 0x0
+BEGIN
+    CTEXT           "HFSGuardaDir 2.0 - Catalogador de Diretórios",ID_FRMSOBRE_LAB1,2,2,205,12,SS_NOPREFIX
+    CTEXT           "Desenvolvido em C++ com MFC, Versão: 2.0",IDC_STATIC,12,18,186,8
+    DEFPUSHBUTTON   "Ok",ID_FRMSOBRE_BTNOK,81,64,47,14,WS_GROUP
+    CTEXT           "Por Henrique Figueiredo de Souza",IDC_STATIC,12,31,186,8,SS_NOPREFIX
+    CTEXT           "Todos os direitos reservados, 2024",IDC_STATIC,12,44,186,8
+END
+
+FRMPRINCIPAL DIALOGEX 0, 0, 626, 216
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_VISIBLE
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",ID_FRMPRINCIPAL_TABCONTROL,"SysTabControl32",TCS_MULTILINE | WS_GROUP | WS_TABSTOP,0,0,614,13
+    CONTROL         "Tree3",ID_FRMPRINCIPAL_ARVORE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | TVS_INFOTIP | WS_BORDER | WS_HSCROLL | WS_GROUP | WS_TABSTOP,0,14,161,94
+    CONTROL         "List1",ID_FRMPRINCIPAL_TABELA,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,163,14,451,95
+    CONTROL         "",ID_FRMPRINCIPAL_TABELAPESQUISA,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,0,111,614,100
+END
+
+FRMCADEXTENSAO DIALOGEX 0, 0, 204, 243
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_CAPTION | WS_SYSMENU
+CAPTION "Cadastro de Extensão de Arquivo"
+MENU IDM_CADEXTENSAO
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",ID_FRMCADEXTENSAO_LVINFO,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,7,190,209
+    PUSHBUTTON      "&Incluir",ID_FRMCADEXTENSAO_BTNINCLUIR,40,221,45,15
+    PUSHBUTTON      "&Excluir",ID_FRMCADEXTENSAO_BTNEXCLUIR,113,221,46,15
+END
+
+FRMCOMPARARDIRETORIO DIALOGEX 0, 0, 435, 342
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_CAPTION | WS_SYSMENU
+CAPTION "Comparar Diretórios"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Comparar Diretórios",ID_FRMCOMPARARDIRETORIO_BTNCOMPARARDIRETORIOS,7,7,78,14
+    PUSHBUTTON      "&Salvar Log",ID_FRMCOMPARARDIRETORIO_BTNSALVARLOG,378,7,50,14
+    CONTROL         "Progress1",ID_FRMCOMPARARDIRETORIO_PB,"msctls_progress32",WS_BORDER,89,7,283,12
+    GROUPBOX        "Diretório 1",ID_FRMCOMPARARDIRETORIO_FRAMEDIR1,7,29,206,149
+    COMBOBOX        ID_FRMCOMPARARDIRETORIO_CMBABA1,14,39,194,134,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Tree1",ID_FRMCOMPARARDIRETORIO_TVDIR1,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | WS_BORDER | WS_HSCROLL | WS_TABSTOP,14,56,191,114
+    GROUPBOX        "Diretório 2",ID_FRMCOMPARARDIRETORIO_FRAMEDIR2,220,29,208,149
+    COMBOBOX        ID_FRMCOMPARARDIRETORIO_CMBABA2,225,39,197,137,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Tree1",ID_FRMCOMPARARDIRETORIO_TVDIR2,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | WS_BORDER | WS_HSCROLL | WS_TABSTOP,226,56,194,114
+    LTEXT           "Diferenças Encontradas",ID_FRMCOMPARARDIRETORIO_LABDIFERENCASENCONTRADAS,7,178,112,8
+    CONTROL         "List1",ID_FRMCOMPARARDIRETORIO_LVCOMPARA,"SysListView32",LVS_REPORT | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,191,421,132
+END
+
+FRMIMPORTARDIRETORIO DIALOGEX 0, 0, 551, 319
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Importando Diretório"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Progress1",ID_FRMIMPORTARDIRETORIO_PBIMPORTAR,
+                    "msctls_progress32",WS_BORDER,0,294,551,10
+    EDITTEXT        ID_FRMIMPORTARDIRETORIO_MEMOIMPORTADIR,0,0,551,294,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+END
+
+FRMINFODIRETORIO DIALOGEX 0, 0, 235, 201
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_CAPTION | WS_SYSMENU
+CAPTION "Informações do Diretório / Arquivo"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Legenda dos Atributos",ID_FRMINFODIRETORIO_FRAME,7,7,221,59,WS_GROUP
+    LTEXT           "[ARQ] - Arquivo comum",ID_FRMINFODIRETORIO_LAB1,13,18,75,10
+    LTEXT           "[DIR] - Diretório",ID_FRMINFODIRETORIO_LAB2,116,18,75,10
+    LTEXT           "[HID] - Arquivo Oculto",ID_FRMINFODIRETORIO_LAB3,13,33,75,10
+    LTEXT           "[VOL] - Volume ID",ID_FRMINFODIRETORIO_LAB4,116,33,75,10
+    LTEXT           "[SYS] - Arquivo de Sistema",ID_FRMINFODIRETORIO_LAB5,13,49,91,10
+    LTEXT           "[ROL] - Arquivo Somente Leitura",ID_FRMINFODIRETORIO_LAB6,116,49,107,10
+    CONTROL         "List1",ID_FRMINFODIRETORIO_LVINFO,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,71,221,96
+    DEFPUSHBUTTON   "OK",ID_FRMINFODIRETORIO_BTNOK,92,174,51,16,WS_GROUP
+END
+
+FRMENTRADA DIALOGEX 22, 17, 209, 63
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_CAPTION | WS_SYSMENU
+CAPTION "Sobre o Catalogador"
+FONT 8, "MS Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Ok",ID_FRMENTRADA_BTNOK,49,40,47,14,WS_GROUP
+    LTEXT           "HFSGuardaDir 2.0 - Catalogador de Diretórios",ID_FRMENTRADA_LABEL,10,6,189,8,SS_NOPREFIX
+    EDITTEXT        ID_FRMENTRADA_EDIT,10,20,189,13
+    PUSHBUTTON      "Cancelar",ID_FRMENTRADA_BTNCANCELAR,115,40,47,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "HFSCompany"
+            VALUE "FileDescription", "HFSGuardaDiretorio"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "HFSGuardaDiretorio.exe"
+            VALUE "LegalCopyright", "Todos os direitos reservados Henrique Figueiredo de Souza"
+            VALUE "OriginalFilename", "HFSGuardaDiretorio.exe"
+            VALUE "ProductName", "HFSGuardaDiretorio"
+            VALUE "ProductVersion", "2.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    BARRAPESQUISAR, DIALOG
+    BEGIN
+        RIGHTMARGIN, 602
+    END
+
+    FRMSPLASH, DIALOG
+    BEGIN
+        RIGHTMARGIN, 172
+    END
+
+    FRMSOBRE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 207
+    END
+
+    FRMPRINCIPAL, DIALOG
+    BEGIN
+        RIGHTMARGIN, 614
+        BOTTOMMARGIN, 211
+    END
+
+    FRMCADEXTENSAO, DIALOG
+    BEGIN
+    END
+
+    FRMCOMPARARDIRETORIO, DIALOG
+    BEGIN
+    END
+
+    FRMIMPORTARDIRETORIO, DIALOG
+    BEGIN
+    END
+
+    FRMINFODIRETORIO, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 197
+    END
+
+    FRMENTRADA, DIALOG
+    BEGIN
+        RIGHTMARGIN, 207
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+FRMSOBRE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+BARRAPESQUISAR AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+FRMSPLASH AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "HFSGuardaDiretorio"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "HFSGuardaDiretorio"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_HFSGUARDADIRETORIO  "HFSGuardaDiretorio"
+END
+
+STRINGTABLE
+BEGIN
+    STR_APPEXEC             "A aplicação já está sendo executada."
+    STR_NREGJAN             "Não consigo registrar a janela principal."
+    STR_SEMJAN              "Sem janela principal"
+END
+
+STRINGTABLE
+BEGIN
+    STR_NCCRIADLG           "Não consigo criar a dialog!"
+    STR_NREGTELA            "Não consigo registrar a tela!"
+    STR_NCCRIATELA          "Não consigo criar a tela!"
+END
+
+STRINGTABLE
+BEGIN
+    STR_FILHO               "HFSGuardaDiretorio"
+END
+
+STRINGTABLE
+BEGIN
+    STR_NUMINV              "Número inválido!"
+END
+
+STRINGTABLE
+BEGIN
+    STR_HFSGUARDADIR_ERROINICIAL "Ocorreu um erro no aplicativo!"
+    STR_HFSGUARDADIR_VALIDAARQUIVOCONF 
+                            "Arquivo de configuração não existe!\nAs configurações padrão serão usadas!"
+    STR_TABELA_NOME         "Nome"
+    STR_TABELA_TAMANHO      "Tamanho"
+    STR_TABELA_TIPO         "Tipo"
+    STR_TABELA_MODIFICADO   "Modificado"
+    STR_TABELA_ATRIBUTOS    "Atributos"
+END
+
+STRINGTABLE
+BEGIN
+    STR_TABELA_CAMINHO      "Caminho"
+    STR_TABELA_ABA          "Aba"
+    STR_ABA_CODIGO          "Código:"
+    STR_ABA_NOME            "Nome:"
+    STR_TIPO_CODIGO         "Código:"
+    STR_TIPO_NOME           "Nome:"
+    STR_TIPOLISTA_ARQUIVO   "Arquivo"
+    STR_TIPOLISTA_DIRETORIO "Diretório"
+    STR_CONEXAOPARAMS_NOME  "Nome:"
+    STR_CONEXAOPARAMS_DRIVER "Driver:"
+    STR_CONEXAOPARAMS_URL   "URL:"
+    STR_CONEXAOPARAMS_LOGIN "Login:"
+    STR_CONEXAOPARAMS_SENHA "Senha:"
+    STR_PARAMETRO_DESKTOP   "Desktop:"
+    STR_PARAMETRO_DIRETORIOUSUARIO "Diretório do usuário:"
+    STR_PARAMETRO_DIRETORIOSISTEMA "Diretório do sistema:"
+END
+
+STRINGTABLE
+BEGIN
+    STR_PARAMETRO_ARQUIVOCONFIGURACAO "Arquivo de configuração:"
+    STR_PARAMETRO_LOOKANDFEEL "lookAndFeel:"
+    STR_PARAMETRO_LOCALIDADELINGUA "Língua:"
+    STR_PARAMETRO_LOCALIDADEPAIS "País:"
+    STR_PARAMETRO_VERSAO    "Versão:"
+    STR_DIRETORIO_ABA       "Aba:"
+    STR_DIRETORIO_CODIGO    "Código:"
+    STR_DIRETORIO_ORDEM     "Ordem:"
+    STR_DIRETORIO_NOME      "Nome:"
+    STR_DIRETORIO_TAMANHO   "Tamanho:"
+    STR_DIRETORIO_TIPO      "Tipo:"
+    STR_DIRETORIO_MODIFICADO "Modificado:"
+    STR_DIRETORIO_ATRIBUTOS "Atributos:"
+    STR_DIRETORIO_CODDIRPAI "Código Diretório Pai:"
+    STR_DIRETORIO_CAMINHO   "Caminho:"
+    STR_EXTENSAO_CODIGO     "Código:"
+END
+
+STRINGTABLE
+BEGIN
+    STR_EXTENSAO_NOME       "Extensão:"
+    STR_EXTENSAO_ICONE      "Ícone:"
+    STR_EXTENSAO_ARQUIVO    "arquivo(file)"
+    STR_EXTENSAO_DIRETORIO  "diretorio(directory)"
+    STR_EXTENSAO_ZIP        ".zip"
+    STR_FRMPRINCIPAL_TITULO "HFSGuardaDiretorio 2.0 - Catalogador de Diretórios"
+    STR_FRMPRINCIPAL_BARRASTATUS1 "Quantidade Total: , Tamanho Total:"
+    STR_FRMPRINCIPAL_BTNIMPORTARDIRETORIO "Importar Diretório"
+    STR_FRMPRINCIPAL_BTNPESQUISA "Pesquisar"
+    STR_FRMPRINCIPAL_ABA1   "DISCO1"
+    STR_FRMPRINCIPAL_MENUABA "Aba"
+    STR_FRMPRINCIPAL_MENUINCLUIRNOVAABA "Incluir Nova Aba"
+    STR_FRMPRINCIPAL_MENUDIRETORIO "Diretório"
+    STR_FRMPRINCIPAL_MENUALTERARNOMEABAATIVA "Alterar Nome da Aba Ativa"
+    STR_FRMPRINCIPAL_MENUEXCLUIRABAATIVA "Excluir Aba Ativa"
+    STR_FRMPRINCIPAL_MENUIMPORTARDIRETORIO "Importar Diretório"
+END
+
+STRINGTABLE
+BEGIN
+    STR_ESCOLHAARQUIVO_FILTROXML "Arquivo XML (*.xml)"
+    STR_ESCOLHAARQUIVO_FILTROSQL "Arquivo SQL (*.sql)"
+    STR_ESCOLHAARQUIVO_FILTROBMP "Arquivo BMP (*.bmp)"
+    STR_ESCOLHAARQUIVO_FILTROICO "Arquivo ICO (*.ico)"
+    STR_ESCOLHAARQUIVO_FILTROGIF "Arquivo GIF (*.gif)"
+    STR_ESCOLHAARQUIVO_FILTROPNG "Arquivo JPEG (*.png)"
+    STR_ESCOLHAARQUIVO_FILTROJPG "Arquivo PNG (*.jpg)"
+    STR_ESCOLHAARQUIVO_FILTROTIF "Arquivo TIFF (*.tif)"
+    STR_ESCOLHAARQUIVO_TODOSDIRETORIOS "Todos os diretórios"
+    STR_FRMPRINCIPAL_BARRASTATUS2 " "
+    STR_FRMCOMPARARDIRETORIO_BARRASTATUS2 " "
+    STR_FRMIMPORTARDIRETORIO_BARRASTATUS2 " "
+END
+
+STRINGTABLE
+BEGIN
+    STR_FRMPRINCIPAL_MENUIMPORTARSUBDIRETORIOS "Importar SubDiretórios"
+    STR_FRMPRINCIPAL_MENUCOMPARARDIRETORIOS "Comparar Diretórios"
+    STR_FRMPRINCIPAL_MENUCADASTRAREXTENSAOARQUIVO 
+                            "Cadastrar Extensão de Arquivo"
+    STR_FRMPRINCIPAL_MENUEXPANDIRDIRETORIOS "Expandir Diretórios"
+    STR_FRMPRINCIPAL_MENUCOLAPSARDIRETORIOS "Colapsar Diretórios"
+    STR_FRMPRINCIPAL_MENUEXPORTARDIRETORIOSABAATIVA 
+                            "Exportar Diretórios da Aba Ativa"
+    STR_FRMPRINCIPAL_MENUTXT "TXT"
+    STR_FRMPRINCIPAL_MENUCSV "CSV"
+    STR_FRMPRINCIPAL_MENUHTML "HTML"
+    STR_FRMPRINCIPAL_MENUXML "XML"
+    STR_FRMPRINCIPAL_MENUSQL "SQL"
+    STR_FRMPRINCIPAL_MENUIMPORTARDIRETORIOSVIAXML 
+                            "Importar Diretórios Via XML"
+    STR_FRMPRINCIPAL_MENUGRAVARLOGIMPORTACAO "Gravar Log da Importação"
+    STR_FRMPRINCIPAL_MENUVISAO "Visão"
+    STR_FRMPRINCIPAL_MENUMOSTRAROCULTARARVOREDIRABAATIVA 
+                            "Mostrar/Ocultar Árvore de diretórios da Aba Ativa"
+    STR_FRMPRINCIPAL_MENUMOSTRAROCULTARLISTAITENSPESQUISADOS 
+                            "Mostrar/Ocultar lista de itens pesquisados"
+END
+
+STRINGTABLE
+BEGIN
+    STR_FRMPRINCIPAL_MENUSOBRE "Sobre"
+    STR_FRMPRINCIPAL_TAMMAXPESQUISA 
+                            "A pesquisa só é feita com pelo menos 2 caracteres!"
+    STR_FRMPRINCIPAL_DIGITANOMEDIRETORIO 
+                            "Este diretório não possui um nome.\nDigite o nome do diretório!"
+    STR_FRMPRINCIPAL_VALIDANOMEDIRETORIO "Nenhum nome de diretório informado!"
+    STR_FRMPRINCIPAL_ERROSALVARARQUIVO "Ocorreu um erro ao salvar o arquivo."
+    STR_FRMPRINCIPAL_SUCESSOEXPORTAR "Exportação realizada com sucesso!"
+    STR_FRMPRINCIPAL_EXCLUIRDIRETORIOSELECIONADO 
+                            "Tem Certeza, que você deseja excluir este diretório, isto implicará na destruição de todos os seus items catalogados?"
+    STR_FRMPRINCIPAL_IMPORTACAONAOREALIZADA "Importação não realizada!"
+    STR_FRMPRINCIPAL_DIRETORIOEXISTECATALOGO 
+                            "Este diretório já existe no catálogo!"
+    STR_FRMPRINCIPAL_IMPORTACAOREALIZADA "Importação realizada com sucesso!"
+    STR_FRMPRINCIPAL_ERROABRIRDIR 
+                            "Um erro ocorreu. Nenhum diretório foi escolhido."
+    STR_FRMPRINCIPAL_DIRIMPORTACAOSUCESSO 
+                            "Importação do(s) diretório(s) realizada com sucesso!"
+    STR_FRMPRINCIPAL_DIGITAINCLUIRNOVAABA "Digite o Nome da Nova Aba?"
+    STR_FRMPRINCIPAL_DIGITAALTERARNOMEABA "Digite o Novo Nome da Aba Ativa?"
+    STR_FRMPRINCIPAL_CONFIRMAEXCLUIRABA 
+                            "Tem Certeza, que você deseja excluir esta aba, \nisto implicará na destruição de todos os seus itens catalogados?"
+    STR_FRMPRINCIPAL_VALIDAEXCLUIRABA "A primeira Aba não pode ser excluída!"
+END
+
+STRINGTABLE
+BEGIN
+    STR_FRMPRINCIPAL_MENUSOBRECATALOGADOR "Sobre o Catalogador"
+    STR_FRMPRINCIPAL_MENUIDIOMA "Idioma"
+    STR_FRMPRINCIPAL_MENUPORTUGUES "Português [Portuguese]"
+    STR_FRMPRINCIPAL_MENUINGLES "Inglês [English]"
+    STR_FRMPRINCIPAL_MENUESPANHOL "Espanhol [Spanish]"
+    STR_FRMPRINCIPAL_MENUFRANCES "Francês [French]"
+    STR_FRMPRINCIPAL_MENUITALIANO "Italiano [Italian]"
+    STR_FRMPRINCIPAL_MENUALEMAO "Alemão [German]"
+    STR_FRMPRINCIPAL_MENUJAPONES "Japonês [Japanese]"
+    STR_FRMPRINCIPAL_MENUCOREANO "Coreano [Korean]"
+    STR_FRMPRINCIPAL_MENUCHINESTRADICIONAL 
+                            "Chinês Tradicional [Traditional Chinese]"
+    STR_FRMPRINCIPAL_MENUEXCLUIRDIRETORIOSELECIONADO 
+                            "Excluir Diretório Selecionado"
+    STR_FRMPRINCIPAL_MENUINFORMACOESDIRETORIOARQUIVO 
+                            "Informações do Diretório / Arquivo"
+    STR_FRMSOBRE_TITULO     "Sobre o Catalogador"
+    STR_FRMSOBRE_LABEL1     "HFSGuardaDir 2.0 - Catalogador de Diretórios"
+    STR_FRMSOBRE_LABEL2     "Desenvolvido em C++ com MFC, Versão: 2.0"
+END
+
+STRINGTABLE
+BEGIN
+    STR_FRMSOBRE_LABEL3     "Por Henrique Figueiredo de Souza"
+    STR_FRMSOBRE_LABEL4     "Todos os direitos reservados, 2015"
+    STR_FRMSOBRE_PROPRIEDADE "Propriedade"
+    STR_FRMSOBRE_VALOR      "Valor"
+    STR_FRMSPLASH_LABEL1    "HFSGuardaDiretorio 2.0"
+    STR_FRMSPLASH_LABEL2    "Catalogador de Diretórios"
+    STR_FRMCOMPARARDIRETORIO_TITULO "Comparar Diretórios"
+    STR_FRMCOMPARARDIRETORIO_BTNCOMPARARDIRETORIOS "Comparar Diretórios"
+    STR_FRMCOMPARARDIRETORIO_BTNSALVARLOG "Salvar Log"
+    STR_FRMCOMPARARDIRETORIO_BARRASTATUS1 "Total de diferenças encontradas:"
+    STR_FRMCOMPARARDIRETORIO_PANELDIRETORIO1 "Diretório 1"
+    STR_FRMCOMPARARDIRETORIO_LABDIFERENCASENCONTRADAS "Diferenças Encontradas"
+    STR_FRMCOMPARARDIRETORIO_PANELDIRETORIO2 "Diretório 2"
+    STR_FRMCOMPARARDIRETORIO_NENHUMADIFERENCAENCONTRADA 
+                            "Nenhuma diferença encontrada!"
+    STR_FRMCOMPARARDIRETORIO_DIRETORIOSNAOSELECIONADOS 
+                            "Diretórios não selecionados!"
+    STR_FRMCOMPARARDIRETORIO_LOGSALVOMEMODIRSISTEMA 
+                            "Log salvo no mesmo diretório do sistema!"
+END
+
+STRINGTABLE
+BEGIN
+    STR_FRMCADEXTENSAO_TITULO "Cadastro de Extensão de Arquivo"
+    STR_FRMCADEXTENSAO_EXTENSAO "Extensão"
+    STR_FRMCADEXTENSAO_ICONE "Ícone"
+    STR_FRMCADEXTENSAO_BTNINCLUIR "Incluir"
+    STR_FRMCADEXTENSAO_BTNEXCLUIR "Excluir"
+    STR_FRMCADEXTENSAO_MENUEXTENSAO "Extensão"
+    STR_FRMCADEXTENSAO_MENUEXPORTARTODOS "Exportar Todos"
+    STR_FRMCADEXTENSAO_MENUIMPORTARTODOS "Importar Todos"
+    STR_FRMCADEXTENSAO_MENUINCLUIREXTENSAO "Incluir Extensão"
+    STR_FRMCADEXTENSAO_MENUEXCLUIREXTENSAO "Excluir Extensão"
+    STR_FRMCADEXTENSAO_MENUEXCLUIRTODASEXTENSOES "Excluir Todas Extensões"
+    STR_FRMCADEXTENSAO_MENUEXPORTARICONE "Exportar para Ícone"
+    STR_FRMCADEXTENSAO_MENUEXPORTARGIF "Exportar para GIF"
+    STR_FRMCADEXTENSAO_MENUEXPORTARJPEG "Exportar para JPEG"
+    STR_FRMCADEXTENSAO_MENUEXPORTARPNG "Exportar para PNG"
+    STR_FRMCADEXTENSAO_MENUEXPORTARTIFF "Exportar para TIFF"
+END
+
+STRINGTABLE
+BEGIN
+    STR_FRMCADEXTENSAO_MENUIMPORTARICONESARQUIVOS 
+                            "Importar Ícones dos Arquivos"
+    STR_FRMCADEXTENSAO_MENUEXTRAIRICONESARQUIVOS "Extrair Ícones dos Arquivos"
+    STR_FRMCADEXTENSAO_EXTENSAOJACADASTRADA "Extensão já existe cadastrada!"
+    STR_FRMCADEXTENSAO_EXTENSAOSALVASUCESSO "Extensão salva com sucesso!"
+    STR_FRMCADEXTENSAO_EXTENSAOCERTEZAEXCLUIR 
+                            "Tem Certeza, que você deseja excluir esta extensão?"
+    STR_FRMCADEXTENSAO_EXTENSAOCERTEZATODOSEXCLUIR 
+                            "Tem Certeza, que você deseja excluir todas as extensões?"
+    STR_FRMCADEXTENSAO_EXTENSAOEXCLUIDASUCESSO 
+                            "Extensão excluída com sucesso!"
+    STR_FRMCADEXTENSAO_EXTENSOESEXCLUIDASSUCESSO 
+                            "Extensões excluídas com sucesso!"
+    STR_FRMCADEXTENSAO_EXPORTAREXTENSAO 
+                            "Ícones salvos no mesmo diretório do sistema!"
+    STR_FRMCADEXTENSAO_MENUEXPORTARBITMAP "Exportar para Bitmap"
+    STR_FRMINFODIRETORIO_TITULO "Informações do Diretório / Arquivo"
+    STR_FRMINFODIRETORIO_PANELLEGENDA "Legenda dos Atributos"
+    STR_FRMINFODIRETORIO_LABARQUIVOCOMUM "[ARQ] - Arquivo comum"
+    STR_FRMINFODIRETORIO_LABARQUIVOOCULTO "[HID] - Arquivo Oculto"
+    STR_FRMINFODIRETORIO_LABARQUIVOSISTEMA "[SYS] - Arquivo de Sistema"
+    STR_FRMINFODIRETORIO_LABDIRETORIO "[DIR] - Diretório"
+END
+
+STRINGTABLE
+BEGIN
+    STR_FRMINFODIRETORIO_LABVOLUMEID "[VOL] - Volume ID"
+    STR_FRMINFODIRETORIO_LABARQUIVOSOMENTELEITURA 
+                            "[ROL] - Arquivo Somente Leitura"
+    STR_FRMINFODIRETORIO_ITEM "Item"
+    STR_FRMINFODIRETORIO_DESCRICAO "Descrição"
+    STR_FRMIMPORTARDIRETORIO_TITULO "Importando Diretório"
+    STR_FRMIMPORTARDIRETORIO_BARRASTATUS1 "Total de linhas sendo processadas:"
+    STR_FRMIMPORTARDIRETORIO_DIRETORIOEXISTECATALOGO 
+                            "O diretório já existe no catálogo!"
+    STR_DIALOGO_INFO        "Informação"
+    STR_DIALOGO_ERRO        "Erro"
+    STR_DIALOGO_CONFIRMA    "Confirma"
+    STR_DIALOGO_ENTRADA     "Informa"
+    STR_DIALOGO_YESBUTTONTEXT "Sim"
+    STR_DIALOGO_YESBUTTONMNEMONIC "S"
+    STR_DIALOGO_CANCELBUTTONTEXT "Cancelar"
+    STR_DIALOGO_CANCELBUTTONMNEMONIC "C"
+    STR_DIALOGO_NOBUTTONTEXT "Não"
+END
+
+STRINGTABLE
+BEGIN
+    STR_DIALOGO_NOBUTTONMNEMONIC "N"
+    STR_DIALOGO_OKBUTTONTEXT "OK"
+    STR_DIALOGO_OKBUTTONMNEMONIC "O"
+    STR_ESCOLHAARQUIVO_APPROVEBUTTONTEXT "Escolha o Diretório"
+    STR_ESCOLHAARQUIVO_APPROVEBUTTONMNEMONIC "D"
+    STR_ESCOLHAARQUIVO_APPROVEBUTTONTOOLTIPTEXT 
+                            "Confirme a escolha do diretório."
+    STR_ESCOLHAARQUIVO_LOOKINLABELMNEMONIC "E"
+    STR_ESCOLHAARQUIVO_LOOKINLABELTEXT "Examinar em"
+    STR_ESCOLHAARQUIVO_SAVEINLABELMNEMONIC "S"
+    STR_ESCOLHAARQUIVO_SAVEINLABELTEXT "Salvar em"
+    STR_ESCOLHAARQUIVO_UPFOLDERTOOLTIPTEXT "Um nível acima"
+    STR_ESCOLHAARQUIVO_UPFOLDERACCESSIBLENAME "Um nível acima"
+    STR_ESCOLHAARQUIVO_HOMEFOLDERTOOLTIPTEXT "Desktop"
+    STR_ESCOLHAARQUIVO_HOMEFOLDERACCESSIBLENAME "Desktop"
+    STR_ESCOLHAARQUIVO_NEWFOLDERTOOLTIPTEXT "Criar nova pasta"
+    STR_ESCOLHAARQUIVO_NEWFOLDERACCESSIBLENAME "Criar nova pasta"
+END
+
+STRINGTABLE
+BEGIN
+    STR_ESCOLHAARQUIVO_LISTVIEWBUTTONTOOLTIPTEXT "Lista"
+    STR_ESCOLHAARQUIVO_LISTVIEWBUTTONACCESSIBLENAME "Lista"
+    STR_ESCOLHAARQUIVO_DETAILSVIEWBUTTONTOOLTIPTEXT "Detalhes"
+    STR_ESCOLHAARQUIVO_DETAILSVIEWBUTTONACCESSIBLENAME "Detalhes"
+    STR_ESCOLHAARQUIVO_FILENAMELABELMNEMONIC "N"
+    STR_ESCOLHAARQUIVO_FILENAMELABELTEXT "Nome do arquivo"
+    STR_ESCOLHAARQUIVO_FILESOFTYPELABELMNEMONIC "A"
+    STR_ESCOLHAARQUIVO_FILESOFTYPELABELTEXT "Arquivos do tipo"
+    STR_ESCOLHAARQUIVO_FILENAMEHEADERTEXT "Nome"
+    STR_ESCOLHAARQUIVO_FILESIZEHEADERTEXT "Tamanho"
+    STR_ESCOLHAARQUIVO_FILETYPEHEADERTEXT "Tipo"
+    STR_ESCOLHAARQUIVO_FILEDATEHEADERTEXT "Data"
+    STR_ESCOLHAARQUIVO_FILEATTRHEADERTEXT "Atributos"
+    STR_ESCOLHAARQUIVO_CANCELBUTTONTEXT "Cancelar"
+    STR_ESCOLHAARQUIVO_CANCELBUTTONMNEMONIC "C"
+    STR_ESCOLHAARQUIVO_CANCELBUTTONTOOLTIPTEXT "Cancelar"
+END
+
+STRINGTABLE
+BEGIN
+    STR_ESCOLHAARQUIVO_OPENBUTTONTEXT "Abrir"
+    STR_ESCOLHAARQUIVO_OPENBUTTONMNEMONIC "A"
+    STR_ESCOLHAARQUIVO_OPENBUTTONTOOLTIPTEXT "Abrir"
+    STR_ESCOLHAARQUIVO_SAVEBUTTONTEXT "Salvar"
+    STR_ESCOLHAARQUIVO_SAVEBUTTONMNEMONIC "S"
+    STR_ESCOLHAARQUIVO_SAVEBUTTONTOOLTIPTEXT "Salvar"
+    STR_ESCOLHAARQUIVO_UPDATEBUTTONTEXT "Alterar"
+    STR_ESCOLHAARQUIVO_UPDATEBUTTONMNEMONIC "A"
+    STR_ESCOLHAARQUIVO_UPDATEBUTTONTOOLTIPTEXT "Alterar"
+    STR_ESCOLHAARQUIVO_HELPBUTTONTEXT "Ajuda"
+    STR_ESCOLHAARQUIVO_HELPBUTTONMNEMONIC "A"
+    STR_ESCOLHAARQUIVO_HELPBUTTONTOOLTIPTEXT "Ajuda"
+    STR_ESCOLHAARQUIVO_ACCEPTALLFILEFILTERTEXT "Todos os arquivos"
+    STR_ESCOLHAARQUIVO_FILTROTXT "Arquivo TXT (*.txt)"
+    STR_ESCOLHAARQUIVO_FILTROCSV "Arquivo CSV (*.csv)"
+    STR_ESCOLHAARQUIVO_FILTROHTML "Arquivo HTML (*.html)"
+END
+
+#endif    // Inglês (Estados Unidos) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Português (Brasil) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTB)
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE_BRAZILIAN
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#include ""res\\HFSGuardaDiretorio.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""      // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_HFSGUARDADIRETORIO ACCELERATORS
+BEGIN
+    VK_CONTROL,     ID_ACELERADORES,        VIRTKEY, NOINVERT
+END
+
+#endif    // Português (Brasil) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#include "res\HFSGuardaDiretorio.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"      // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

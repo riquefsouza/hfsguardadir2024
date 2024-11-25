@@ -1,0 +1,2017 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
+<interface>
+  <requires lib="gtk+" version="3.0"/>
+  <object class="GtkWindow" id="FrmImportarDiretorio">
+    <property name="width-request">895</property>
+    <property name="height-request">572</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">Importando Diretório</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="window-position">center</property>
+    <property name="default-width">895</property>
+    <property name="default-height">572</property>
+    <property name="decorated">False</property>
+    <child>
+      <object class="GtkVBox" id="form_vbox1">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkScrolledWindow" id="scrollMemo">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <child>
+              <object class="GtkTextView" id="memoImportaDir">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkProgressBar" id="pbImportar">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHBox" id="hbox3">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkStatusbar" id="barraStatus1">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="spacing">2</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkStatusbar" id="barraStatus2">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="spacing">2</property>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkDialog" id="FrmSobre">
+    <property name="can-focus">False</property>
+    <property name="border-width">5</property>
+    <property name="title" translatable="yes">Sobre o Catalogador</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="window-position">center</property>
+    <property name="default-width">300</property>
+    <property name="default-height">150</property>
+    <property name="type-hint">dialog</property>
+    <child internal-child="vbox">
+      <object class="GtkBox" id="dialog-vbox1">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox" id="dialog-action_area1">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="layout-style">center</property>
+            <child>
+              <object class="GtkButton" id="btbOk">
+                <property name="label" translatable="yes">_Ok</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="use-underline">True</property>
+                <signal name="clicked" handler="on_btbOk_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkVBox" id="vbox4">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkLabel" id="label">
+                <property name="height-request">30</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">HFSGuardaDir 2.0 - Catalogador de Diretórios</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label8">
+                <property name="height-request">30</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Desenvolvido em C com GTK, Versão: 2.0</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label9">
+                <property name="height-request">30</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Por Henrique Figueiredo de Souza</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label10">
+                <property name="height-request">30</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Todos os direitos reservados, 2024</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <action-widgets>
+      <action-widget response="0">btbOk</action-widget>
+    </action-widgets>
+  </object>
+  <object class="GtkWindow" id="FrmSplash">
+    <property name="width-request">375</property>
+    <property name="height-request">113</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="modal">True</property>
+    <property name="window-position">center-always</property>
+    <property name="default-width">375</property>
+    <property name="default-height">113</property>
+    <property name="decorated">False</property>
+    <child>
+      <object class="GtkVBox" id="vbox2">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkLabel" id="label4">
+            <property name="height-request">60</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">HFSGuardaDiretorio 2.0</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="size" value="100"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label5">
+            <property name="height-request">60</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Catalogador de Diretórios</property>
+            <attributes>
+              <attribute name="weight" value="ultrabold"/>
+              <attribute name="size" value="200"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkProgressBar" id="pb1">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkMenu" id="MenuPopup">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <child>
+      <object class="GtkMenuItem" id="menuInformacoesDiretorioArquivo">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="label" translatable="yes">Informações do Diretório / Arquivo</property>
+        <property name="use-underline">True</property>
+        <signal name="activate" handler="on_menuInformacoesDiretorioArquivo_activate" swapped="no"/>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="menuExcluirDiretorioSelecionado">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="label" translatable="yes">Excluir Diretório Selecionado</property>
+        <property name="use-underline">True</property>
+        <signal name="activate" handler="on_menuExcluirDiretorioSelecionado_activate" swapped="no"/>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="menuExpandirDiretorios2">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="label" translatable="yes">Expandir Diretórios</property>
+        <property name="use-underline">True</property>
+        <signal name="activate" handler="on_menuExpandirDiretorios2_activate" swapped="no"/>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="menuColapsarDiretorios2">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="label" translatable="yes">Colapsar Diretórios</property>
+        <property name="use-underline">True</property>
+        <signal name="activate" handler="on_menuColapsarDiretorios2_activate" swapped="no"/>
+      </object>
+    </child>
+    <child>
+      <object class="GtkSeparatorMenuItem" id="separador2">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="menuIncluirNovaAba2">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="label" translatable="yes">Incluir nova aba</property>
+        <property name="use-underline">True</property>
+        <signal name="activate" handler="on_menuIncluirNovaAba2_activate" swapped="no"/>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="menuAlterarNomeAbaAtiva2">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="label" translatable="yes">Alterar nome da aba ativa</property>
+        <property name="use-underline">True</property>
+        <signal name="activate" handler="on_menuAlterarNomeAbaAtiva2_activate" swapped="no"/>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="menuExcluirAbaAtiva2">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="label" translatable="yes">Excluir aba ativa</property>
+        <property name="use-underline">True</property>
+        <signal name="activate" handler="on_menuExcluirAbaAtiva2_activate" swapped="no"/>
+      </object>
+    </child>
+  </object>
+  <object class="GtkListStore" id="lsTabelaCompara">
+    <columns>
+      <!-- column-name gchararray1 -->
+      <column type="gchararray"/>
+      <!-- column-name string -->
+      <column type="gchararray"/>
+      <!-- column-name gchararray2 -->
+      <column type="gchararray"/>
+      <!-- column-name gchararray3 -->
+      <column type="gchararray"/>
+      <!-- column-name gchararray4 -->
+      <column type="gchararray"/>
+      <!-- column-name gchararray5 -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0">Nome</col>
+        <col id="1" translatable="yes">tamanho</col>
+        <col id="2" translatable="yes">tipo</col>
+        <col id="3" translatable="yes">Modificado</col>
+        <col id="4" translatable="yes">Atributos</col>
+        <col id="5" translatable="yes">Caminho</col>
+      </row>
+      <row>
+        <col id="0">Nome2</col>
+        <col id="1" translatable="yes">tamanho2</col>
+        <col id="2" translatable="yes">tipo2</col>
+        <col id="3" translatable="yes">Modificado2</col>
+        <col id="4" translatable="yes">Atributos2</col>
+        <col id="5" translatable="yes">Caminho2</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="lsTabelaExtensao">
+    <columns>
+      <!-- column-name text -->
+      <column type="gchararray"/>
+      <!-- column-name text1 -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">Extensao1</col>
+        <col id="1">Icone1</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Extensao2</col>
+        <col id="1">Icone2</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkDialog" id="FrmCadExtensao">
+    <property name="width-request">286</property>
+    <property name="height-request">418</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="border-width">5</property>
+    <property name="title" translatable="yes">Cadastro de Extensão de Arquivo</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="window-position">center</property>
+    <property name="type-hint">dialog</property>
+    <child internal-child="vbox">
+      <object class="GtkBox" id="form_vbox">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox" id="form_area">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="layout-style">center</property>
+            <child>
+              <object class="GtkButton" id="btnIncluir">
+                <property name="label">gtk-add</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="use-stock">True</property>
+                <signal name="clicked" handler="on_btnIncluir_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="btnExcluir">
+                <property name="label">gtk-remove</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="use-stock">True</property>
+                <signal name="clicked" handler="on_btnExcluir_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkVBox" id="vbox">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkMenuBar" id="barraMenu">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkMenuItem" id="menuExtensao">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">_Extensão</property>
+                    <property name="use-underline">True</property>
+                    <child type="submenu">
+                      <object class="GtkMenu" id="submenuExtensao">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <child>
+                          <object class="GtkMenuItem" id="menuIncluirExtensao">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Incluir Extensão</property>
+                            <property name="use-underline">True</property>
+                            <signal name="activate" handler="on_menuIncluirExtensao_activate" swapped="no"/>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkMenuItem" id="menuExcluirExtensao">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Excluir Extensão</property>
+                            <property name="use-underline">True</property>
+                            <signal name="activate" handler="on_menuExcluirExtensao_activate" swapped="no"/>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkMenuItem" id="menuExcluirTodasExtensoes">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Excluir Todas Extensões</property>
+                            <property name="use-underline">True</property>
+                            <signal name="activate" handler="on_menuExcluirTodasExtensoes_activate" swapped="no"/>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuItem" id="menuExportarTodos">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">Exportar Todos</property>
+                    <property name="use-underline">True</property>
+                    <child type="submenu">
+                      <object class="GtkMenu" id="submenuExportarTodos">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <child>
+                          <object class="GtkMenuItem" id="menuExportarBitmap">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Exportar para Bitmap</property>
+                            <property name="use-underline">True</property>
+                            <signal name="activate" handler="on_menuExportarBitmap_activate" swapped="no"/>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkMenuItem" id="menuExportarIcone">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Exportar para Ícone</property>
+                            <property name="use-underline">True</property>
+                            <signal name="activate" handler="on_menuExportarIcone_activate" swapped="no"/>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkMenuItem" id="menuExportarGIF">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Exportar para GIF</property>
+                            <property name="use-underline">True</property>
+                            <signal name="activate" handler="on_menuExportarGIF_activate" swapped="no"/>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkMenuItem" id="menuExportarJPEG">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Exportar para JPEG</property>
+                            <property name="use-underline">True</property>
+                            <signal name="activate" handler="on_menuExportarJPEG_activate" swapped="no"/>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkMenuItem" id="menuExportarPNG">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Exportar para PNG</property>
+                            <property name="use-underline">True</property>
+                            <signal name="activate" handler="on_menuExportarPNG_activate" swapped="no"/>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkMenuItem" id="menuExportarTIFF">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Exportar para TIFF</property>
+                            <property name="use-underline">True</property>
+                            <signal name="activate" handler="on_menuExportarTIFF_activate" swapped="no"/>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuItem" id="menuImportarTodos">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">Importar Todos</property>
+                    <property name="use-underline">True</property>
+                    <child type="submenu">
+                      <object class="GtkMenu" id="submenuImportarTodos">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <child>
+                          <object class="GtkMenuItem" id="menuImportarIconesArquivos">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Importar Ícones dos Arquivos</property>
+                            <property name="use-underline">True</property>
+                            <signal name="activate" handler="on_menuImportarIconesArquivos_activate" swapped="no"/>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkMenuItem" id="menuExtrairIconesArquivos">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Extrair Ícones dos Arquivos</property>
+                            <property name="use-underline">True</property>
+                            <signal name="activate" handler="on_menuExtrairIconesArquivos_activate" swapped="no"/>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="scrollTabela">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <child>
+                  <object class="GtkTreeView" id="tabelaExtensao">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="model">lsTabelaExtensao</property>
+                    <child internal-child="selection">
+                      <object class="GtkTreeSelection"/>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="colunaCadExtExtensao">
+                        <property name="min-width">150</property>
+                        <property name="title" translatable="yes">Extensão</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="colunaCadExtIcone">
+                        <property name="min-width">100</property>
+                        <property name="title" translatable="yes">Ícone</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <action-widgets>
+      <action-widget response="0">btnIncluir</action-widget>
+      <action-widget response="0">btnExcluir</action-widget>
+    </action-widgets>
+  </object>
+  <object class="GtkListStore" id="lsTabelaFixa">
+    <columns>
+      <!-- column-name text -->
+      <column type="gchararray"/>
+      <!-- column-name gchararray1 -->
+      <column type="gchararray"/>
+      <!-- column-name gchararray2 -->
+      <column type="gchararray"/>
+      <!-- column-name gchararray3 -->
+      <column type="gchararray"/>
+      <!-- column-name gchararray4 -->
+      <column type="gchararray"/>
+      <!-- column-name gchararray5 -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0">Nome</col>
+        <col id="1" translatable="yes">tamanho</col>
+        <col id="2" translatable="yes">tipo</col>
+        <col id="3" translatable="yes">Modificado</col>
+        <col id="4" translatable="yes">Atributos</col>
+        <col id="5" translatable="yes">Caminho</col>
+      </row>
+      <row>
+        <col id="0">Nome2</col>
+        <col id="1" translatable="yes">tamanho2</col>
+        <col id="2" translatable="yes">tipo2</col>
+        <col id="3" translatable="yes">Modificado2</col>
+        <col id="4" translatable="yes">Atributos2</col>
+        <col id="5" translatable="yes">Caminho2</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="lsTabelaInfo">
+    <columns>
+      <!-- column-name text -->
+      <column type="gchararray"/>
+      <!-- column-name text1 -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">Aba:</col>
+        <col id="1" translatable="yes">Descricao1</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Nome:</col>
+        <col id="1" translatable="yes">Descricao2</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Tamanho:</col>
+        <col id="1" translatable="yes">Descricao3</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Tipo:</col>
+        <col id="1" translatable="yes">Descricao4</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Modificado:</col>
+        <col id="1" translatable="yes">Descricao5</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Atributos:</col>
+        <col id="1" translatable="yes">Descricao6</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Caminho:</col>
+        <col id="1" translatable="yes">Descricao7</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkDialog" id="FrmInfoDiretorio">
+    <property name="width-request">369</property>
+    <property name="height-request">372</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="border-width">5</property>
+    <property name="title" translatable="yes">Informações do Diretório / Arquivo</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="window-position">center</property>
+    <property name="type-hint">dialog</property>
+    <child internal-child="vbox">
+      <object class="GtkBox" id="dialog-vbox3">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox" id="dialog-action_area3">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="layout-style">center</property>
+            <child>
+              <object class="GtkButton" id="btnOk">
+                <property name="label">gtk-ok</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="use-stock">True</property>
+                <signal name="clicked" handler="on_btnOk_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkVBox" id="vbox3">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkFrame" id="frame1">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label-xalign">0</property>
+                <child>
+                  <object class="GtkTable" id="table1">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="n-rows">3</property>
+                    <property name="n-columns">2</property>
+                    <child>
+                      <object class="GtkLabel" id="labArquivoComum">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">[ARQ] - Arquivo comum</property>
+                      </object>
+                      <packing>
+                        <property name="x-padding">5</property>
+                        <property name="y-padding">5</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="labArquivoOculto">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">[HID] - Arquivo Oculto</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">1</property>
+                        <property name="right-attach">2</property>
+                        <property name="x-padding">5</property>
+                        <property name="y-padding">5</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="labArquivoSistema">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">[SYS] - Arquivo de Sistema</property>
+                      </object>
+                      <packing>
+                        <property name="top-attach">1</property>
+                        <property name="bottom-attach">2</property>
+                        <property name="x-padding">5</property>
+                        <property name="y-padding">5</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="labLegendaDiretorio">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">[DIR] - Diretório</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">1</property>
+                        <property name="right-attach">2</property>
+                        <property name="top-attach">1</property>
+                        <property name="bottom-attach">2</property>
+                        <property name="x-padding">5</property>
+                        <property name="y-padding">5</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="labVolumeID">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">[VOL] - Volume ID</property>
+                      </object>
+                      <packing>
+                        <property name="top-attach">2</property>
+                        <property name="bottom-attach">3</property>
+                        <property name="x-padding">5</property>
+                        <property name="y-padding">5</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="labArquivoSomenteLeitura">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">[ROL] - Arquivo Somente Leitura</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">1</property>
+                        <property name="right-attach">2</property>
+                        <property name="top-attach">2</property>
+                        <property name="bottom-attach">3</property>
+                        <property name="x-padding">5</property>
+                        <property name="y-padding">5</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+                <child type="label_item">
+                  <placeholder/>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="scrollTabela1">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <child>
+                  <object class="GtkTreeView" id="tabelaInfo">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="model">lsTabelaInfo</property>
+                    <child internal-child="selection">
+                      <object class="GtkTreeSelection"/>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="colunaInfoItem">
+                        <property name="resizable">True</property>
+                        <property name="sizing">autosize</property>
+                        <property name="title" translatable="yes">Item</property>
+                        <property name="sort-column-id">1</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="colunaInfoDescricao">
+                        <property name="resizable">True</property>
+                        <property name="sizing">autosize</property>
+                        <property name="title" translatable="yes">Descrição</property>
+                        <property name="sort-column-id">1</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <action-widgets>
+      <action-widget response="0">btnOk</action-widget>
+    </action-widgets>
+  </object>
+  <object class="GtkListStore" id="lsTabelaPesquisa">
+    <columns>
+      <!-- column-name text -->
+      <column type="gchararray"/>
+      <!-- column-name gchararray1 -->
+      <column type="gchararray"/>
+      <!-- column-name gchararray2 -->
+      <column type="gchararray"/>
+      <!-- column-name gchararray3 -->
+      <column type="gchararray"/>
+      <!-- column-name gchararray4 -->
+      <column type="gchararray"/>
+      <!-- column-name gchararray5 -->
+      <column type="gchararray"/>
+      <!-- column-name gchararray6 -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0">Nome</col>
+        <col id="1" translatable="yes">tamanho</col>
+        <col id="2" translatable="yes">tipo</col>
+        <col id="3" translatable="yes">Modificado</col>
+        <col id="4" translatable="yes">Atributos</col>
+        <col id="5" translatable="yes">Caminho</col>
+        <col id="6" translatable="yes">Aba</col>
+      </row>
+      <row>
+        <col id="0">Nome2</col>
+        <col id="1" translatable="yes">tamanho2</col>
+        <col id="2" translatable="yes">tipo2</col>
+        <col id="3" translatable="yes">Modificado2</col>
+        <col id="4" translatable="yes">Atributos2</col>
+        <col id="5" translatable="yes">Caminho2</col>
+        <col id="6" translatable="yes">Aba2</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkTreeStore" id="tsArvoreDiretorio1">
+    <columns>
+      <!-- column-name gchararray -->
+      <column type="gchararray"/>
+      <!-- column-name text -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkTreeStore" id="tsArvoreDiretorio2">
+    <columns>
+      <!-- column-name gchararray -->
+      <column type="gchararray"/>
+      <!-- column-name text -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkWindow" id="FrmCompararDiretorio">
+    <property name="width-request">700</property>
+    <property name="height-request">600</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">Comparar Diretórios</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="window-position">center</property>
+    <property name="default-width">700</property>
+    <property name="default-height">600</property>
+    <child>
+      <object class="GtkVBox" id="vbox5">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkHBox" id="hbox1">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkButton" id="btnCompararDiretorios">
+                <property name="label" translatable="yes">Comparar Diretórios</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="on_btnCompararDiretorios_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="padding">5</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkProgressBar" id="pb2">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="padding">5</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="btnSalvarLog">
+                <property name="label" translatable="yes">Salvar Log</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="btnSalvarLog_clicked_cb" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="padding">5</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="padding">3</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHBox" id="hbox2">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkFrame" id="frame2">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label-xalign">0</property>
+                <property name="shadow-type">none</property>
+                <child>
+                  <object class="GtkAlignment" id="alignment1">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="left-padding">12</property>
+                    <child>
+                      <object class="GtkVBox" id="vbox6">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <child>
+                          <object class="GtkComboBox" id="cmbAba1">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <signal name="changed" handler="on_cmbAba1_changed" swapped="no"/>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkScrolledWindow" id="scrolledwindow3">
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <child>
+                              <object class="GtkTreeView" id="tvDiretorio1">
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="model">tsArvoreDiretorio1</property>
+                                <property name="headers-visible">False</property>
+                                <signal name="button-release-event" handler="on_tvDiretorio1_button_release_event" swapped="no"/>
+                                <signal name="row-collapsed" handler="on_tvDiretorio1_row_collapsed" swapped="no"/>
+                                <signal name="row-expanded" handler="on_tvDiretorio1_row_expanded" swapped="no"/>
+                                <child internal-child="selection">
+                                  <object class="GtkTreeSelection"/>
+                                </child>
+                                <child>
+                                  <object class="GtkTreeViewColumn" id="colunaArvoreDiretorio1">
+                                    <property name="title" translatable="yes">coluna</property>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child type="label">
+                  <object class="GtkLabel" id="labDiretorio1">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">&lt;b&gt;Diretório 1&lt;/b&gt;</property>
+                    <property name="use-markup">True</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFrame" id="frame3">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label-xalign">0</property>
+                <property name="shadow-type">none</property>
+                <child>
+                  <object class="GtkAlignment" id="alignment2">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="left-padding">12</property>
+                    <child>
+                      <object class="GtkVBox" id="vbox7">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <child>
+                          <object class="GtkComboBox" id="cmbAba2">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <signal name="changed" handler="on_cmbAba2_changed" swapped="no"/>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkScrolledWindow" id="scrolledwindow4">
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <child>
+                              <object class="GtkTreeView" id="tvDiretorio2">
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="model">tsArvoreDiretorio2</property>
+                                <property name="headers-visible">False</property>
+                                <signal name="button-release-event" handler="on_tvDiretorio2_button_release_event" swapped="no"/>
+                                <signal name="row-collapsed" handler="on_tvDiretorio2_row_collapsed" swapped="no"/>
+                                <signal name="row-expanded" handler="on_tvDiretorio2_row_expanded" swapped="no"/>
+                                <child internal-child="selection">
+                                  <object class="GtkTreeSelection"/>
+                                </child>
+                                <child>
+                                  <object class="GtkTreeViewColumn" id="colunaArvoreDiretorio2">
+                                    <property name="title" translatable="yes">column</property>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child type="label">
+                  <object class="GtkLabel" id="label6">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">&lt;b&gt;Diretório 2&lt;/b&gt;</property>
+                    <property name="use-markup">True</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHBox" id="hbox4">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkLabel" id="labDiferencasEncontradas">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Diferenças Encontradas</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow" id="scrollTabela12">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <child>
+              <object class="GtkTreeView" id="tabelaCompara">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="model">lsTabelaCompara</property>
+                <signal name="button-release-event" handler="on_tabelaCompara_button_release_event" swapped="no"/>
+                <signal name="row-activated" handler="on_tabelaCompara_row_activated" swapped="no"/>
+                <child internal-child="selection">
+                  <object class="GtkTreeSelection"/>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="colunaComparaNome">
+                    <property name="resizable">True</property>
+                    <property name="sizing">autosize</property>
+                    <property name="title" translatable="yes">Nome</property>
+                    <property name="sort-indicator">True</property>
+                    <property name="sort-column-id">1</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="colunaComparaTamanho">
+                    <property name="resizable">True</property>
+                    <property name="sizing">autosize</property>
+                    <property name="title" translatable="yes">Tamanho</property>
+                    <property name="sort-indicator">True</property>
+                    <property name="sort-column-id">2</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="colunaComparaTipo">
+                    <property name="resizable">True</property>
+                    <property name="sizing">autosize</property>
+                    <property name="title" translatable="yes">Tipo</property>
+                    <property name="sort-indicator">True</property>
+                    <property name="sort-column-id">3</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="colunaComparaModificado">
+                    <property name="resizable">True</property>
+                    <property name="sizing">autosize</property>
+                    <property name="title" translatable="yes">Modificado</property>
+                    <property name="sort-indicator">True</property>
+                    <property name="sort-column-id">4</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="colunaComparaAtributos">
+                    <property name="resizable">True</property>
+                    <property name="sizing">autosize</property>
+                    <property name="title" translatable="yes">Atributos</property>
+                    <property name="sort-indicator">True</property>
+                    <property name="sort-column-id">5</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="colunaComparaCaminho">
+                    <property name="resizable">True</property>
+                    <property name="sizing">autosize</property>
+                    <property name="title" translatable="yes">Caminho</property>
+                    <property name="sort-indicator">True</property>
+                    <property name="sort-column-id">6</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHBox" id="hbox5">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkStatusbar" id="barraStatus11">
+                <property name="width-request">300</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="spacing">2</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkStatusbar" id="barraStatus21">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="spacing">2</property>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">4</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkTreeStore" id="tsArvoreFixa">
+    <columns>
+      <!-- column-name gchararray -->
+      <column type="gchararray"/>
+      <!-- column-name text -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkWindow" id="FrmPrincipal">
+    <property name="width-request">900</property>
+    <property name="height-request">500</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">HFSGuardaDiretorio 2.0 - Catalogador de Diretórios</property>
+    <property name="window-position">center-always</property>
+    <property name="default-width">950</property>
+    <property name="default-height">718</property>
+    <signal name="delete-event" handler="on_FrmPrincipal_delete_event" swapped="no"/>
+    <child>
+      <object class="GtkVBox" id="vbox1">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkMenuBar" id="barraMenu1">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkMenuItem" id="menuAba">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Aba</property>
+                <child type="submenu">
+                  <object class="GtkMenu" id="submenuAba">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <child>
+                      <object class="GtkMenuItem" id="menuIncluirNovaAba">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Incluir Nova Aba</property>
+                        <property name="use-underline">True</property>
+                        <signal name="activate" handler="on_menuIncluirNovaAba_activate" swapped="no"/>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem" id="menuAlterarNomeAbaAtiva">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Alterar Nome da Aba Ativa</property>
+                        <property name="use-underline">True</property>
+                        <signal name="activate" handler="on_menuAlterarNomeAbaAtiva_activate" swapped="no"/>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem" id="menuExcluirAbaAtiva">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Excluir Aba Ativa</property>
+                        <property name="use-underline">True</property>
+                        <signal name="activate" handler="on_menuExcluirAbaAtiva_activate" swapped="no"/>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem" id="menuDiretorio">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Diretório</property>
+                <child type="submenu">
+                  <object class="GtkMenu" id="submenuDiretorio">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <child>
+                      <object class="GtkMenuItem" id="menuImportarDiretorio">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Importar Diretório</property>
+                        <property name="use-underline">True</property>
+                        <signal name="activate" handler="on_menuImportarDiretorio_activate" swapped="no"/>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem" id="menuImportarSubDiretorios">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Importar SubDiretórios</property>
+                        <property name="use-underline">True</property>
+                        <signal name="activate" handler="on_menuImportarSubDiretorios_activate" swapped="no"/>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem" id="menuCompararDiretorios">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Comparar Diretórios</property>
+                        <property name="use-underline">True</property>
+                        <signal name="activate" handler="on_menuCompararDiretorios_activate" swapped="no"/>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem" id="menuCadastrarExtensaoArquivo">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Cadastrar Extensão de Arquivo</property>
+                        <property name="use-underline">True</property>
+                        <signal name="activate" handler="on_menuCadastrarExtensaoArquivo_activate" swapped="no"/>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkSeparatorMenuItem" id="menuseparador1">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem" id="menuExpandirDiretorios">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Expandir Diretórios</property>
+                        <property name="use-underline">True</property>
+                        <signal name="activate" handler="on_menuExpandirDiretorios_activate" swapped="no"/>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem" id="menuColapsarDiretorios">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Colapsar Diretórios</property>
+                        <property name="use-underline">True</property>
+                        <signal name="activate" handler="on_menuColapsarDiretorios_activate" swapped="no"/>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem" id="menuExportarDiretoriosAbaAtiva">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Exportar Diretórios da Aba Ativa</property>
+                        <property name="use-underline">True</property>
+                        <signal name="activate" handler="on_menuExportarDiretoriosAbaAtiva_activate" swapped="no"/>
+                        <child type="submenu">
+                          <object class="GtkMenu" id="menu2">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <child>
+                              <object class="GtkMenuItem" id="menuTXT">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="label" translatable="yes">TXT</property>
+                                <property name="use-underline">True</property>
+                                <signal name="activate" handler="on_menuTXT_activate" swapped="no"/>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkMenuItem" id="menuCSV">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="label" translatable="yes">CSV</property>
+                                <property name="use-underline">True</property>
+                                <signal name="activate" handler="on_menuCSV_activate" swapped="no"/>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkMenuItem" id="menuHTML">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="label" translatable="yes">HTML</property>
+                                <property name="use-underline">True</property>
+                                <signal name="activate" handler="on_menuHTML_activate" swapped="no"/>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkMenuItem" id="menuXML">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="label" translatable="yes">XML</property>
+                                <property name="use-underline">True</property>
+                                <signal name="activate" handler="on_menuXML_activate" swapped="no"/>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkMenuItem" id="menuSQL">
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <property name="label" translatable="yes">SQL</property>
+                                <property name="use-underline">True</property>
+                                <signal name="activate" handler="on_menuSQL_activate" swapped="no"/>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem" id="menuImportarDiretoriosViaXML">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Importar Diretórios via XML</property>
+                        <property name="use-underline">True</property>
+                        <signal name="activate" handler="on_menuImportarDiretoriosViaXML_activate" swapped="no"/>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkCheckMenuItem" id="menuGravarLogImportacao">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Gravar Log da Importação</property>
+                        <property name="use-underline">True</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem" id="menuVisao">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Visão</property>
+                <child type="submenu">
+                  <object class="GtkMenu" id="submenuVisao">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <child>
+                      <object class="GtkMenuItem" id="menuMostrarOcultarArvoreDirAbaAtiva">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Mostrar/Ocultar árvore de diretórios da Aba Ativa</property>
+                        <property name="use-underline">True</property>
+                        <signal name="activate" handler="on_menuMostrarOcultarArvoreDirAbaAtiva_activate" swapped="no"/>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem" id="menuMostrarOcultarListaItensPesquisados">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Mostrar/Ocultar lista de itens pesquisados</property>
+                        <property name="use-underline">True</property>
+                        <signal name="activate" handler="on_menuMostrarOcultarListaItensPesquisados_activate" swapped="no"/>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem" id="menuSobre">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Sobre</property>
+                <property name="use-underline">True</property>
+                <child type="submenu">
+                  <object class="GtkMenu" id="submenuSobre">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <child>
+                      <object class="GtkMenuItem" id="menuSobreCatalogador">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Sobre o Catalogador</property>
+                        <property name="use-underline">True</property>
+                        <signal name="activate" handler="on_menuSobreCatalogador_activate" swapped="no"/>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToolbar" id="toolbar1">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkToolItem" id="toolbutton1">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkButton" id="btnImportarDiretorio">
+                    <property name="label" translatable="yes">Importar Diretorio</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="receives-default">False</property>
+                    <property name="use-underline">True</property>
+                    <signal name="clicked" handler="on_btnImportarDiretorio_clicked" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="homogeneous">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkToolItem" id="toolbutton2">
+                <property name="width-request">222</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkProgressBar" id="pb">
+                    <property name="width-request">385</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="homogeneous">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkToolItem" id="toolbutton3">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkEntry" id="edtPesquisa">
+                    <property name="width-request">325</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="max-length">10</property>
+                    <property name="primary-icon-activatable">False</property>
+                    <property name="secondary-icon-activatable">False</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="homogeneous">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkToolItem" id="toolbutton4">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkButton" id="btnPesquisa">
+                    <property name="label" translatable="yes">Pesquisar</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="receives-default">False</property>
+                    <property name="use-underline">True</property>
+                    <signal name="clicked" handler="on_btnPesquisa_clicked" swapped="no"/>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="homogeneous">True</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkVPaned" id="spPesquisa">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="position">250</property>
+            <property name="position-set">True</property>
+            <child>
+              <object class="GtkNotebook" id="notebook1">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <signal name="switch-page" handler="on_notebook1_switch_page" swapped="no"/>
+                <child>
+                  <object class="GtkHPaned" id="sp">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="position">250</property>
+                    <child>
+                      <object class="GtkScrolledWindow" id="scrollArvore">
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="shadow-type">in</property>
+                        <child>
+                          <object class="GtkTreeView" id="arvoreFixa">
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="model">tsArvoreFixa</property>
+                            <property name="headers-visible">False</property>
+                            <signal name="button-release-event" handler="on_arvoreFixa_button_release_event" swapped="no"/>
+                            <signal name="row-collapsed" handler="on_arvoreFixa_row_collapsed" swapped="no"/>
+                            <signal name="row-expanded" handler="on_arvoreFixa_row_expanded" swapped="no"/>
+                            <child internal-child="selection">
+                              <object class="GtkTreeSelection"/>
+                            </child>
+                            <child>
+                              <object class="GtkTreeViewColumn" id="colunaArvoreFixa">
+                                <property name="title" translatable="yes">coluna</property>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="resize">False</property>
+                        <property name="shrink">True</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkScrolledWindow" id="scrollTabelaFixa">
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="shadow-type">etched-out</property>
+                        <child>
+                          <object class="GtkTreeView" id="tabelaFixa">
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="model">lsTabelaFixa</property>
+                            <signal name="button-release-event" handler="on_tabelaFixa_button_release_event" swapped="no"/>
+                            <signal name="row-activated" handler="on_tabelaFixa_row_activated" swapped="no"/>
+                            <child internal-child="selection">
+                              <object class="GtkTreeSelection"/>
+                            </child>
+                            <child>
+                              <object class="GtkTreeViewColumn" id="colunaTabelaFixaNome">
+                                <property name="resizable">True</property>
+                                <property name="sizing">autosize</property>
+                                <property name="title" translatable="yes">Nome</property>
+                                <property name="sort-indicator">True</property>
+                                <property name="sort-column-id">1</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkTreeViewColumn" id="colunaTabelaFixaTamanho">
+                                <property name="resizable">True</property>
+                                <property name="sizing">autosize</property>
+                                <property name="title" translatable="yes">Tamanho</property>
+                                <property name="sort-indicator">True</property>
+                                <property name="sort-column-id">2</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkTreeViewColumn" id="colunaTabelaFixaTipo">
+                                <property name="resizable">True</property>
+                                <property name="sizing">autosize</property>
+                                <property name="title" translatable="yes">Tipo</property>
+                                <property name="sort-indicator">True</property>
+                                <property name="sort-column-id">3</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkTreeViewColumn" id="colunaTabelaFixaModificado">
+                                <property name="resizable">True</property>
+                                <property name="sizing">autosize</property>
+                                <property name="title" translatable="yes">Modificado</property>
+                                <property name="sort-indicator">True</property>
+                                <property name="sort-column-id">4</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkTreeViewColumn" id="colunaTabelaFixaAtributos">
+                                <property name="resizable">True</property>
+                                <property name="sizing">autosize</property>
+                                <property name="title" translatable="yes">Atributos</property>
+                                <property name="sort-indicator">True</property>
+                                <property name="sort-column-id">5</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkTreeViewColumn" id="colunaTabelaFixaCaminho">
+                                <property name="resizable">True</property>
+                                <property name="sizing">autosize</property>
+                                <property name="title" translatable="yes">Caminho</property>
+                                <property name="sort-indicator">True</property>
+                                <property name="sort-column-id">6</property>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="resize">True</property>
+                        <property name="shrink">True</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+                <child type="tab">
+                  <object class="GtkLabel" id="labAbaFixa">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">DISCO1</property>
+                  </object>
+                  <packing>
+                    <property name="tab-fill">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+                <child type="tab">
+                  <object class="GtkLabel" id="label2">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">page 2</property>
+                  </object>
+                  <packing>
+                    <property name="position">1</property>
+                    <property name="tab-fill">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+                <child type="tab">
+                  <object class="GtkLabel" id="label3">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">page 3</property>
+                  </object>
+                  <packing>
+                    <property name="position">2</property>
+                    <property name="tab-fill">False</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="resize">False</property>
+                <property name="shrink">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="scrollPesquisa">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <child>
+                  <object class="GtkTreeView" id="tabelaPesquisa">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="model">lsTabelaPesquisa</property>
+                    <signal name="button-release-event" handler="on_tabelaPesquisa_button_release_event" swapped="no"/>
+                    <child internal-child="selection">
+                      <object class="GtkTreeSelection"/>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="colunaTabelaPesquisaNome">
+                        <property name="resizable">True</property>
+                        <property name="sizing">autosize</property>
+                        <property name="title" translatable="yes">Nome</property>
+                        <property name="sort-indicator">True</property>
+                        <property name="sort-column-id">1</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="colunaTabelaPesquisaTamanho">
+                        <property name="resizable">True</property>
+                        <property name="sizing">autosize</property>
+                        <property name="title" translatable="yes">Tamanho</property>
+                        <property name="sort-indicator">True</property>
+                        <property name="sort-column-id">2</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="colunaTabelaPesquisaTipo">
+                        <property name="resizable">True</property>
+                        <property name="sizing">autosize</property>
+                        <property name="title" translatable="yes">Tipo</property>
+                        <property name="sort-indicator">True</property>
+                        <property name="sort-column-id">3</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="colunaTabelaPesquisaModificado">
+                        <property name="resizable">True</property>
+                        <property name="sizing">autosize</property>
+                        <property name="title" translatable="yes">Modificado</property>
+                        <property name="sort-indicator">True</property>
+                        <property name="sort-column-id">4</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="colunaTabelaPesquisaAtributos">
+                        <property name="resizable">True</property>
+                        <property name="sizing">autosize</property>
+                        <property name="title" translatable="yes">Atributos</property>
+                        <property name="sort-indicator">True</property>
+                        <property name="sort-column-id">5</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="colunaTabelaPesquisaCaminho">
+                        <property name="resizable">True</property>
+                        <property name="sizing">autosize</property>
+                        <property name="title" translatable="yes">Caminho</property>
+                        <property name="sort-indicator">True</property>
+                        <property name="sort-column-id">6</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="colunaTabelaPesquisaAba">
+                        <property name="resizable">True</property>
+                        <property name="sizing">autosize</property>
+                        <property name="title" translatable="yes">Aba</property>
+                        <property name="sort-indicator">True</property>
+                        <property name="sort-column-id">7</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="resize">True</property>
+                <property name="shrink">True</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHBox" id="hbox6">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkStatusbar" id="barraStatus111">
+                <property name="width-request">300</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="spacing">2</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkStatusbar" id="barraStatus211">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="spacing">2</property>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">3</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

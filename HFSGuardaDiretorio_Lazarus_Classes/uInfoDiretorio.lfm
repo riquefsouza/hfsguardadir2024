@@ -1,0 +1,117 @@
+object FrmInfoDiretorio: TFrmInfoDiretorio
+  Left = 582
+  Height = 439
+  Top = 152
+  Width = 481
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Informações do Diretório / Arquivo'
+  ClientHeight = 439
+  ClientWidth = 481
+  Color = clBtnFace
+  DesignTimePPI = 120
+  Font.Color = clWindowText
+  Font.Height = -14
+  Font.Name = 'Tahoma'
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '3.6.0.0'
+  object GroupBox1: TGroupBox
+    Left = 0
+    Height = 111
+    Top = 0
+    Width = 481
+    Align = alTop
+    Caption = 'Legenda dos Atributos'
+    ClientHeight = 89
+    ClientWidth = 477
+    ParentBackground = False
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 20
+      Height = 17
+      Top = 10
+      Width = 148
+      Caption = '[ARQ] - Arquivo comum'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 20
+      Height = 17
+      Top = 36
+      Width = 137
+      Caption = '[HID] - Arquivo Oculto'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 240
+      Height = 17
+      Top = 10
+      Width = 98
+      Caption = '[DIR] - Diretório'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 240
+      Height = 17
+      Top = 36
+      Width = 111
+      Caption = '[VOL] - Volume ID'
+      ParentColor = False
+    end
+    object Label5: TLabel
+      Left = 20
+      Height = 17
+      Top = 61
+      Width = 164
+      Caption = '[SYS] - Arquivo de Sistema'
+      ParentColor = False
+    end
+    object Label6: TLabel
+      Left = 240
+      Height = 17
+      Top = 61
+      Width = 200
+      Caption = '[ROL] - Arquivo Somente Leitura'
+      ParentColor = False
+    end
+  end
+  object sgInfo: TStringGrid
+    Left = 0
+    Height = 277
+    Top = 111
+    Width = 481
+    Align = alClient
+    ColCount = 2
+    DefaultColWidth = 160
+    DefaultRowHeight = 22
+    FixedCols = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goRowSelect]
+    RowCount = 2
+    TabOrder = 1
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -14
+    TitleFont.Name = 'Tahoma'
+    OnDrawCell = sgInfoDrawCell
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 51
+    Top = 388
+    Width = 481
+    Align = alBottom
+    ClientHeight = 51
+    ClientWidth = 481
+    ParentBackground = False
+    TabOrder = 2
+    object btnOk: TButton
+      Left = 197
+      Height = 31
+      Top = 8
+      Width = 96
+      Caption = '&Ok'
+      ModalResult = 1
+      TabOrder = 0
+    end
+  end
+end

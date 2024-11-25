@@ -1,0 +1,9 @@
+StartsWith --> AnsiStartsText ou AnsiStartsStr
+
+sCaminho.StartsWith(sNomeDirRaiz) --> AnsiStartsText(sNomeDirRaiz, sCaminho)
+
+
+caminho.LastIndexOf(BARRA_INVERTIDA) --> LastDelimiter(BARRA_INVERTIDA, caminho)
+
+sTexto.IndexOf('>') --> Pos('>', sTexto)
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="hfsguardadir">
+		<Project filename="hfsguardadir-gtkmm3/hfsguardadir-gtkmm3.cbp" />
+		<Project filename="hfsguardadir-gtk3/hfsguardadir-gtk3.cbp" />
+		<Project filename="hfsguardadir-gtk4/hfsguardadir-gtk4.cbp" />
+		<Project filename="hfsguardadir-gtkmm4/hfsguardadir-gtkmm4.cbp" />
+		<Project filename="hfsguardadir-wxwidgets32/hfsguardadir-wxwidgets32.cbp" />
+		<Project filename="hfsguardadir-foxtoolkit/hfsguardadir-foxtoolkit.cbp" />
+		<Project filename="hfsguardadir-cpp/hfsguardadir-cpp.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

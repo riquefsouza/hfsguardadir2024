@@ -1,0 +1,4 @@
+set WXWIN = C:\wxWidgets-3.2.6
+set WXSQLITE = C:\wxsqlite3-master
+
+

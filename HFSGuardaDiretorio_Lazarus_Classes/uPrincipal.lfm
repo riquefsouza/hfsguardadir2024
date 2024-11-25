@@ -1,0 +1,479 @@
+object FrmPrincipal: TFrmPrincipal
+  Left = 564
+  Height = 662
+  Top = 178
+  Width = 1130
+  Caption = 'HFSGuardaDiretorio 2.0 - Catalogador de Diretórios'
+  ClientHeight = 662
+  ClientWidth = 1130
+  Color = clBtnFace
+  DesignTimePPI = 120
+  Font.Color = clWindowText
+  Font.Height = -14
+  Font.Name = 'Tahoma'
+  Menu = MainMenu1
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '3.6.0.0'
+  object spPesquisa: TSplitter
+    Cursor = crVSplit
+    Left = 0
+    Height = 10
+    Top = 417
+    Width = 1130
+    Align = alBottom
+    AutoSnap = False
+    Beveled = True
+    ResizeAnchor = akBottom
+    Visible = False
+  end
+  object barraStatus: TStatusBar
+    Left = 0
+    Height = 29
+    Top = 633
+    Width = 1130
+    Panels = <    
+      item
+        Text = 'Quantidade Total: , Tamanho Total:'
+        Width = 375
+      end    
+      item
+        Width = 62
+      end>
+    SimplePanel = False
+  end
+  object panelPesquisa: TPanel
+    Left = 0
+    Height = 41
+    Top = 0
+    Width = 1130
+    Align = alTop
+    ClientHeight = 41
+    ClientWidth = 1130
+    ParentBackground = False
+    TabOrder = 1
+    object btnPesquisa: TBitBtn
+      Left = 1020
+      Height = 31
+      Top = 0
+      Width = 94
+      Anchors = [akTop, akRight]
+      Caption = '&Pesquisar'
+      Default = True
+      OnClick = btnPesquisaClick
+      TabOrder = 0
+    end
+    object edtPesquisa: TEdit
+      Left = 658
+      Height = 25
+      Top = 4
+      Width = 354
+      Anchors = [akTop, akLeft, akRight]
+      MaxLength = 255
+      TabOrder = 1
+    end
+    object pb: TProgressBar
+      Left = 158
+      Height = 21
+      Top = 6
+      Width = 481
+      Min = 1
+      Position = 1
+      Step = 1
+      TabOrder = 2
+    end
+    object btnImportarDiretorio: TButton
+      Left = 2
+      Height = 31
+      Top = 0
+      Width = 136
+      Caption = '&Importar Diretório'
+      TabOrder = 3
+      OnClick = ImportarDiretorio1Click
+    end
+  end
+  object pageControl: TPageControl
+    Left = 0
+    Height = 376
+    Top = 41
+    Width = 1130
+    ActivePage = TabSheet1
+    Align = alClient
+    Images = ImageList3
+    PopupMenu = PopupMenu1
+    TabIndex = 0
+    TabOrder = 2
+    OnChange = pageControlChange
+    object TabSheet1: TTabSheet
+      Caption = 'DISCO1'
+      ClientHeight = 346
+      ClientWidth = 1122
+      ImageIndex = 0
+      object sp: TSplitter
+        Left = 375
+        Height = 346
+        Top = 0
+        Width = 6
+        Beveled = True
+      end
+      object lvFixa: TListView
+        Left = 381
+        Height = 346
+        Top = 0
+        Width = 741
+        Align = alClient
+        Columns = <        
+          item
+            Caption = 'Nome'
+            Width = 375
+          end        
+          item
+            Caption = 'Tamanho'
+            Width = 125
+          end        
+          item
+            Caption = 'Tipo'
+            Width = 88
+          end        
+          item
+            Caption = 'Modificado'
+            Width = 150
+          end        
+          item
+            Caption = 'Atributos'
+            Width = 112
+          end        
+          item
+            AutoSize = True
+            Caption = 'Caminho'
+            Width = 79
+          end>
+        GridLines = True
+        LargeImages = ImageList2
+        ReadOnly = True
+        SmallImages = ImageList1
+        TabOrder = 0
+        ViewStyle = vsReport
+        OnColumnClick = lvFixaColumnClick
+        OnCompare = lvFixaCompare
+        OnDblClick = lvFixaDblClick
+      end
+      object tvFixa: TTreeView
+        Left = 0
+        Height = 346
+        Top = 0
+        Width = 375
+        Align = alLeft
+        HideSelection = False
+        Images = ImageList1
+        ReadOnly = True
+        TabOrder = 1
+        OnChange = tvFixaChange
+        OnCollapsing = tvFixaCollapsing
+        OnExpanding = tvFixaExpanding
+        Options = [tvoAutoItemHeight, tvoKeepCollapsedNodes, tvoReadOnly, tvoShowButtons, tvoShowLines, tvoShowRoot, tvoToolTips, tvoThemedDraw]
+      end
+    end
+  end
+  object lvPesquisa: TListView
+    Left = 0
+    Height = 206
+    Top = 427
+    Width = 1130
+    Align = alBottom
+    Columns = <    
+      item
+        Caption = 'Nome'
+        Width = 375
+      end    
+      item
+        Caption = 'Tamanho'
+        Width = 125
+      end    
+      item
+        Caption = 'Tipo'
+        Width = 88
+      end    
+      item
+        Caption = 'Modificado'
+        Width = 150
+      end    
+      item
+        Caption = 'Atributos'
+        Width = 112
+      end    
+      item
+        AutoSize = True
+        Caption = 'Caminho'
+        Width = 79
+      end    
+      item
+        Caption = 'Aba'
+        Width = 188
+      end    
+      item
+        Caption = 'Número Aba'
+        Width = 0
+      end    
+      item
+        Caption = 'Nome do Pai'
+        Width = 0
+      end>
+    GridLines = True
+    LargeImages = ImageList2
+    ReadOnly = True
+    RowSelect = True
+    SmallImages = ImageList1
+    TabOrder = 3
+    Visible = False
+    ViewStyle = vsReport
+    OnClick = lvPesquisaClick
+    OnColumnClick = lvPesquisaColumnClick
+    OnCompare = lvPesquisaCompare
+  end
+  object MainMenu1: TMainMenu
+    Left = 130
+    Top = 90
+    object Aba1: TMenuItem
+      Caption = 'Aba'
+      object IncluirNovaAba1: TMenuItem
+        Caption = 'Incluir Nova Aba'
+        OnClick = IncluirNovaAba1Click
+      end
+      object AlterarNomeAbaAtiva1: TMenuItem
+        Caption = 'Alterar Nome da Aba Ativa'
+        OnClick = AlterarNomeAbaAtiva1Click
+      end
+      object ExcluirAbaAtiva1: TMenuItem
+        Caption = 'Excluir Aba Ativa'
+        OnClick = ExcluirAbaAtiva1Click
+      end
+    end
+    object Diretorio1: TMenuItem
+      Caption = 'Diretório'
+      object ImportarDiretorio1: TMenuItem
+        Caption = 'Importar Diretório'
+        OnClick = ImportarDiretorio1Click
+      end
+      object ImportarSubDiretorios1: TMenuItem
+        Caption = 'Importar SubDiretórios'
+        OnClick = ImportarSubDiretorios1Click
+      end
+      object CompararDiretorios1: TMenuItem
+        Caption = 'Comparar Diretórios'
+        OnClick = CompararDiretorios1Click
+      end
+      object CadastrarExtensaoArquivo1: TMenuItem
+        Caption = 'Cadastrar Extensão de Arquivo'
+        OnClick = CadastrarExtensaoArquivo1Click
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object ExpandirDiretorios1: TMenuItem
+        Caption = 'Expandir Diretórios'
+        OnClick = ExpandirDiretorios1Click
+      end
+      object ColapsarDiretorios1: TMenuItem
+        Caption = 'Colapsar Diretórios'
+        OnClick = ColapsarDiretorios1Click
+      end
+      object ExportarDiretoriosAbaAtiva1: TMenuItem
+        Caption = 'Exportar Diretórios da Aba Ativa'
+        object TXT1: TMenuItem
+          Caption = 'TXT'
+          OnClick = TXT1Click
+        end
+        object CSV1: TMenuItem
+          Caption = 'CSV'
+          OnClick = CSV1Click
+        end
+        object HTML1: TMenuItem
+          Caption = 'HTML'
+          OnClick = HTML1Click
+        end
+        object XML1: TMenuItem
+          Caption = 'XML'
+          OnClick = XML1Click
+        end
+        object SQL1: TMenuItem
+          Caption = 'SQL'
+          OnClick = SQL1Click
+        end
+      end
+      object ImportarDiretoriosViaXML1: TMenuItem
+        Caption = 'Importar Diretórios via XML'
+        OnClick = ImportarDiretoriosViaXML1Click
+      end
+      object GravarLogImportacao1: TMenuItem
+        Caption = 'Gravar Log da Importação'
+        OnClick = GravarLogImportacao1Click
+      end
+    end
+    object Viso1: TMenuItem
+      Caption = 'Visão'
+      object MostrarOcultArvoreDirAbaAtiva1: TMenuItem
+        Caption = 'Mostrar/Ocultar árvore de diretórios da Aba Ativa'
+        OnClick = MostrarOcultArvoreDirAbaAtiva1Click
+      end
+      object MostrarOcultarListaItensPesquisados1: TMenuItem
+        Caption = 'Mostrar/Ocultar lista de itens pesquisados'
+        OnClick = MostrarOcultarListaItensPesquisados1Click
+      end
+      object ModoExibicao1: TMenuItem
+        Caption = 'Modo Exibição'
+        object Icones1: TMenuItem
+          Caption = 'Icones'
+          RadioItem = True
+          OnClick = Icones1Click
+        end
+        object Lista1: TMenuItem
+          Caption = 'Lista'
+          RadioItem = True
+          OnClick = Lista1Click
+        end
+        object Detalhes1: TMenuItem
+          Caption = 'Detalhes'
+          Checked = True
+          RadioItem = True
+          OnClick = Detalhes1Click
+        end
+        object IconesPequenos1: TMenuItem
+          Caption = 'Icones Pequenos'
+          RadioItem = True
+          OnClick = IconesPequenos1Click
+        end
+      end
+    end
+    object Sobre1: TMenuItem
+      Caption = 'Sobre'
+      OnClick = Sobre1Click
+      object SobreCatalogador1: TMenuItem
+        Caption = 'Sobre o Catalogador'
+        OnClick = SobreCatalogador1Click
+      end
+    end
+  end
+  object ImageList3: TImageList
+    Left = 35
+    Top = 301
+    Bitmap = {
+      4C7A020000001000000010000000CF0000000000000078DACD93410E03210845
+      B9FF9D3C53975DFE4667601010ED384D8A2126CA43513E5168087CC58ED8D7BB
+      7929E59AE7798473AC5A1FE4686B00A56CDB57F196D739AC2BD6F2F67E74C68A
+      0B1BD701196AAFDE9DBD3B8387E26B7E80BA3DE6843F87C43E78BE649DD40F8E
+      F1FFB8F3FEEEFFAD731F24FF9FF69FBCC3B8FFBAFE0FD93B3AFA5E7F4FD996FE
+      D96ADD3CAFE85F9B66B5CDF49FB1ABFA8F2DD13F2E2AD5BFA80FB1FED49EEB1D
+      ABF25FE8FFE6F9ABF523AE7FF7FDDDFF8F7B28D7FF88654FFACFE9DFB2FFAAFF
+      0FC0080493
+    }
+  end
+  object ImageList2: TImageList
+    Height = 32
+    Masked = True
+    Width = 32
+    Left = 40
+    Top = 231
+    Bitmap = {
+      4C7A020000002000000020000000AE0100000000000078DAED993B7283301086
+      29B98ECF943247F0155CA6A4E53A7F49E996929272830011B320B412285EDBEC
+      CC3F4246D6B72F1E6367D969332B0AF229CF734AC63603116D29890F4276121F
+      BABD5A21F7701FBA3DBE806849FA65552CEF4F308AA9BB48701C3FCC4DEEFADA
+      EDE1C3317AD866EC6B77B95092F8D772C07C399C2FCDC1DEF87D39177E2779FC
+      F0F75F101FC2CF243DB0377E78EA2EBCFE447C1CD08758CEA3F3BF3642582304
+      C48F03FA901FC7D41F117D0E4FFCB1FD8788981D355AE523B0BFB7FCC1460D8E
+      88DF17A7C717271FF26B585267D7B9051F11CF3108D908CCBF343EDAC87D68FD
+      11D16F08F4CD51FF3DEF9FBBDE5D0DDF98199FA1D34E3B4D95554D434659598A
+      34AD7F713EE7D66DDBCBB57E3A3FAEBF77C7F78DF5DAF99C5B76CF298942EB35
+      49297F9A0AF95CBE347F5715198DBFBFD0BBF17D52C70FED9B40599E7A7E6CDE
+      AB414533C8CE39C7CEB5F2ED7D44CA9BE6CD5CD68F57E12FEE9FA175B0EC7A54
+      35D7C3BEBCDE2AF8FCFEC3EB50B483789EAD7EEAB617E7BAFA30BFDD7A69E33B
+      EB60F7E26C47BE9DFCEB75D01F57157FF11C4A25EDFCF9FF43FF21ADFC8FB05F
+      38AD8A91
+    }
+  end
+  object ImageList1: TImageList
+    Masked = True
+    Left = 40
+    Top = 160
+    Bitmap = {
+      4C7A020000001000000010000000B80000000000000078DADD956B0AC4300884
+      73D7BD56CE34D7C94FFB4C9A18B5AE94B2AC30A4947C6A61B429FD48E44C9352
+      222F5B4A2110EDCAA75C39D63B1F4095D8D791B7F1B5AE475B5F7BDEDAD7C967
+      AF10E0319EA1FA08D4C703F511A80FE3D478F85889B7FCA3FA6AF42505F55F61
+      CD9987FDE6BD7047F29FDA17DB011A3FE4E9827BE88EE76ABCD69BA28D9B78AB
+      B630778387351EF3B3C8DF7D3F9BBFB6D3FBDDCE79CFECF27F43CD61B08DBF58
+      32BD6B499EE1D777C00218D8A87C
+    }
+  end
+  object ToolbarImages: TImageList
+    Height = 21
+    Width = 21
+    Left = 40
+    Top = 90
+    Bitmap = {
+      4C7A060000001500000015000000190100000000000078DAED5A010EC32008E4
+      E9FE9CC5A6268681A8C546B7BBC4D8057A9E20DA7425020E02DF2DCA9717F872
+      E39A07ED4DBF941267E45EDC6FD99BBCC5BFC01A4FB19BB1D050C7D2B15FC8E3
+      DE73A00E1D5D3A0B9FC66BCCCBB37F715B792DF351F2D644AD59362D5E965DE3
+      ADFDE43D9E7D847BD40E00FF8894F79BBB45725EE741206FAAF6F0DD3957C474
+      D1F38D792E605D605D0C3E070340488D44738A3A7EBCAE0FA863E40FF9433E00
+      E0A07A9CA901AF1E67EAD5ABC75FAE57E40839428E0060C9FB04EAF8FDEA1E32
+      DBDED4794A3CA1133A77D509E02CA2D8F7DA5CFE25A8FB07BC3CD99A9C525F57
+      EF7D77A2F87BBCD4F1FD8618DFE7EDD5A9C42D4467F1DF3D9E460C8CB80FADF7
+      689D21EB734D2D011BE2032BB3191C
+    }
+  end
+  object sdExportar: TSaveDialog
+    Left = 130
+    Top = 160
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 220
+    Top = 90
+    object InformacoesDiretorioArquivo1: TMenuItem
+      Caption = 'Informações do Diretório / Arquivo'
+      OnClick = InformacoesDiretorioArquivo1Click
+    end
+    object ExcluirDiretorioSelecionado1: TMenuItem
+      Caption = 'Excluir Diretório Selecionado'
+      OnClick = ExcluirDiretorioSelecionado1Click
+    end
+    object ExpandirDiretorios2: TMenuItem
+      Caption = 'Expandir Diretórios'
+      OnClick = ExpandirDiretorios1Click
+    end
+    object ColapsarDiretorios2: TMenuItem
+      Caption = 'Colapsar Diretórios'
+      OnClick = ColapsarDiretorios1Click
+    end
+    object MenuItem1: TMenuItem
+      Caption = '-'
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Incluir nova aba'
+      OnClick = IncluirNovaAba1Click
+    end
+    object Alterarabaativa1: TMenuItem
+      Caption = 'Alterar nome da aba ativa'
+      OnClick = AlterarNomeAbaAtiva1Click
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Excluir aba ativa'
+      OnClick = ExcluirAbaAtiva1Click
+    end
+  end
+  object odImportar: TOpenDialog
+    DefaultExt = '.xml'
+    Filter = 'Arquivos XML (*.xml)|*.xml'
+    Left = 130
+    Top = 220
+  end
+  object escolherDir: TSelectDirectoryDialog
+    Left = 220
+    Top = 160
+  end
+end

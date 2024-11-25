@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FrmPrincipal.cpp" />
+    <ClCompile Include="hfsguardadir\catalogador\Catalogador.cpp" />
+    <ClCompile Include="hfsguardadir\catalogador\RotuloRaiz.cpp" />
+    <ClCompile Include="hfsguardadir\comum\DateTime.cpp" />
+    <ClCompile Include="hfsguardadir\comum\DiretorioXML.cpp" />
+    <ClCompile Include="hfsguardadir\comum\Rotinas.cpp" />
+    <ClCompile Include="hfsguardadir\comum\SQLite3Lib.cpp" />
+    <ClCompile Include="hfsguardadir\objetosbo\AbaBO.cpp" />
+    <ClCompile Include="hfsguardadir\objetosbo\DiretorioBO.cpp" />
+    <ClCompile Include="hfsguardadir\objetosbo\ExtensaoBO.cpp" />
+    <ClCompile Include="hfsguardadir\objetosbo\ImportarBO.cpp" />
+    <ClCompile Include="hfsguardadir\objetosdao\AbaDAO.cpp" />
+    <ClCompile Include="hfsguardadir\objetosdao\DiretorioDAO.cpp" />
+    <ClCompile Include="hfsguardadir\objetosdao\ExtensaoDAO.cpp" />
+    <ClCompile Include="hfsguardadir\objetosdao\VisaoDAO.cpp" />
+    <ClCompile Include="hfsguardadir\objetosgui\Tabela.cpp" />
+    <ClCompile Include="hfsguardadir\objetos\Aba.cpp" />
+    <ClCompile Include="hfsguardadir\objetos\Arquivo.cpp" />
+    <ClCompile Include="hfsguardadir\objetos\ConexaoParams.cpp" />
+    <ClCompile Include="hfsguardadir\objetos\Diretorio.cpp" />
+    <ClCompile Include="hfsguardadir\objetos\DiretorioOrdem.cpp" />
+    <ClCompile Include="hfsguardadir\objetos\Extensao.cpp" />
+    <ClCompile Include="hfsguardadir\objetos\Importar.cpp" />
+    <ClCompile Include="hfsguardadir\objetos\Tipo.cpp" />
+    <ClCompile Include="HFSGuardaDiretorio_Gtkmm3.cpp" />
+    <ClCompile Include="resource.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FrmPrincipal.h" />
+    <ClInclude Include="hfsguardadir\catalogador\Catalogador.h" />
+    <ClInclude Include="hfsguardadir\catalogador\RotuloRaiz.h" />
+    <ClInclude Include="hfsguardadir\comum\DateTime.h" />
+    <ClInclude Include="hfsguardadir\comum\dirent.h" />
+    <ClInclude Include="hfsguardadir\comum\DiretorioXML.h" />
+    <ClInclude Include="hfsguardadir\comum\Rotinas.h" />
+    <ClInclude Include="hfsguardadir\comum\SQLite3Lib.h" />
+    <ClInclude Include="hfsguardadir\objetosbo\AbaBO.h" />
+    <ClInclude Include="hfsguardadir\objetosbo\DiretorioBO.h" />
+    <ClInclude Include="hfsguardadir\objetosbo\ExtensaoBO.h" />
+    <ClInclude Include="hfsguardadir\objetosbo\ImportarBO.h" />
+    <ClInclude Include="hfsguardadir\objetosdao\AbaDAO.h" />
+    <ClInclude Include="hfsguardadir\objetosdao\DiretorioDAO.h" />
+    <ClInclude Include="hfsguardadir\objetosdao\ExtensaoDAO.h" />
+    <ClInclude Include="hfsguardadir\objetosdao\VisaoDAO.h" />
+    <ClInclude Include="hfsguardadir\objetosgui\Tabela.h" />
+    <ClInclude Include="hfsguardadir\objetos\Aba.h" />
+    <ClInclude Include="hfsguardadir\objetos\Arquivo.h" />
+    <ClInclude Include="hfsguardadir\objetos\ConexaoParams.h" />
+    <ClInclude Include="hfsguardadir\objetos\Diretorio.h" />
+    <ClInclude Include="hfsguardadir\objetos\DiretorioOrdem.h" />
+    <ClInclude Include="hfsguardadir\objetos\Extensao.h" />
+    <ClInclude Include="hfsguardadir\objetos\Importar.h" />
+    <ClInclude Include="hfsguardadir\objetos\Tipo.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sqlite\sqlite3.exp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="sqlite\sqlite3.lib" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{119506c1-b004-45b0-a4fd-0c5927b00f9c}</ProjectGuid>
+    <RootNamespace>HFSGuardaDiretorioGtkmm3</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(GTKMM3_HOME)\include;$(GTKMM3_HOME)\include\gtkmm-3.6.0\gtk;$(GTKMM3_HOME)\include\gtkmm-3.6.0\gdk;$(GTKMM3_HOME)\include\gtk+-3.7.2;$(GTKMM3_HOME)\include\cairo-1.12.6\src;$(GTKMM3_HOME)\include\pangomm-2.28.4;$(GTKMM3_HOME)\include\pangomm-2.28.4\pango;$(GTKMM3_HOME)\include\glibmm-2.34.1;$(GTKMM3_HOME)\include\glibmm-2.34.1\glib;$(GTKMM3_HOME)\include\glibmm-2.34.1\gio;$(GTKMM3_HOME)\include\cairomm-1.10.0;$(GTKMM3_HOME)\include\libsigc++-2.3.1;$(GTKMM3_HOME)\include\pango-1.32.2;$(GTKMM3_HOME)\include\pixman-0.28.0;$(GTKMM3_HOME)\include\freetype-2.4.10;$(GTKMM3_HOME)\include\gdk-pixbuf-2.26.4;$(GTKMM3_HOME)\include\libpng-1.5.13;$(GTKMM3_HOME)\include\glib-2.35.1;$(GTKMM3_HOME)\include\glib-2.35.1\glib;$(GTKMM3_HOME)\include\glib-2.35.1\gio;$(GTKMM3_HOME)\include\glib-2.35.1\gmodule;$(GTKMM3_HOME)\include\atk-2.6.0;$(GTKMM3_HOME)\include\atkmm-2.22.6;$(GTKMM3_HOME)\include\atkmm-2.22.6\atk;$(GTKMM3_HOME)\include\fontconfig-2.10.1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(GTKMM3_HOME)\win32\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gtkmm-3.0.lib;gtk-3.0.lib;pangowin32-1.0.lib;cairo-gobject.lib;pangomm-1.0.lib;giomm-2.0.lib;gio-2.0.lib;glibmm-2.0.lib;cairomm-1.0.lib;sigc-2.0.lib;pangocairo-1.0.lib;pango-1.0.lib;harfbuzz.lib;cairo.lib;gdk_pixbuf-2.0.lib;gobject-2.0.lib;glib-2.0.lib;libintl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(GTK3_HOME)\include\gtkmm-4.0;$(GTK3_HOME)\lib\gtkmm-4.0\include;$(GTK3_HOME)\include\gtk-4.0;$(GTK3_HOME)\include\cairo;$(GTK3_HOME)\include\graphene-1.0;$(GTK3_HOME)\lib\graphene-1.0\include;$(GTK3_HOME)\include\pangomm-2.48;$(GTK3_HOME)\lib\pangomm-2.48\include;$(GTK3_HOME)\include\giomm-2.68;$(GTK3_HOME)\lib\giomm-2.68\include;$(GTK3_HOME)\include\glibmm-2.68;$(GTK3_HOME)\lib\glibmm-2.68\include;$(GTK3_HOME)\include\cairomm-1.16;$(GTK3_HOME)\lib\cairomm-1.16\include;$(GTK3_HOME)\include\sigc++-3.0;$(GTK3_HOME)\lib\sigc++-3.0\include;$(GTK3_HOME)\include\pango-1.0;$(GTK3_HOME)\include\pixman-1;$(GTK3_HOME)\include\fribidi;$(GTK3_HOME)\include\harfbuzz;$(GTK3_HOME)\include\freetype2;$(GTK3_HOME)\include\gdk-pixbuf-2.0;$(GTK3_HOME)\include\libpng16;$(GTK3_HOME)\include\glib-2.0;$(GTK3_HOME)\lib\glib-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(GTK3_HOME)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gtkmm-vc143-4.0.lib;gtk-4.lib;pangowin32-1.0.lib;cairo-gobject.lib;graphene-1.0.lib;pangomm-vc143-2.48.lib;giomm-vc143-2.68.lib;gio-2.0.lib;glibmm-vc143-2.68.lib;glibmm_generate_extra_defs-vc143-2.68.lib;cairomm-vc143-1.16.lib;sigc-3.0.lib;pangocairo-1.0.lib;pango-1.0.lib;harfbuzz.lib;cairo.lib;gdk_pixbuf-2.0.lib;gobject-2.0.lib;glib-2.0.lib;intl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(GTKMM3_HOME)\include;$(GTKMM3_HOME)\include\gtkmm-3.6.0;$(GTKMM3_HOME)\include\gtk+-3.7.2;$(GTKMM3_HOME)\include\cairo-1.12.6\src;$(GTKMM3_HOME)\include\pangomm-2.28.4;$(GTKMM3_HOME)\include\glibmm-2.34.1;$(GTKMM3_HOME)\include\cairomm-1.10.0;$(GTKMM3_HOME)\include\libsigc++-2.3.1;$(GTKMM3_HOME)\include\pango-1.32.2;$(GTKMM3_HOME)\include\pixman-0.28.0;$(GTKMM3_HOME)\include\freetype-2.4.10;$(GTKMM3_HOME)\include\gdk-pixbuf-2.26.4;$(GTKMM3_HOME)\include\libpng-1.5.13;$(GTKMM3_HOME)\include\glib-2.35.1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(GTKMM3_HOME)\x64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gtkmm-3.0.lib;gtk-3.0.lib;pangowin32-1.0.lib;cairo-gobject.lib;pangomm-1.0.lib;giomm-2.0.lib;gio-2.0.lib;glibmm-2.0.lib;cairomm-1.0.lib;sigc-2.0.lib;pangocairo-1.0.lib;pango-1.0.lib;harfbuzz.lib;cairo.lib;gdk_pixbuf-2.0.lib;gobject-2.0.lib;glib-2.0.lib;libintl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(GTK3_HOME)\include\gtkmm-4.0;$(GTK3_HOME)\lib\gtkmm-4.0\include;$(GTK3_HOME)\include\gtk-4.0;$(GTK3_HOME)\include\cairo;$(GTK3_HOME)\include\graphene-1.0;$(GTK3_HOME)\lib\graphene-1.0\include;$(GTK3_HOME)\include\pangomm-2.48;$(GTK3_HOME)\lib\pangomm-2.48\include;$(GTK3_HOME)\include\giomm-2.68;$(GTK3_HOME)\lib\giomm-2.68\include;$(GTK3_HOME)\include\glibmm-2.68;$(GTK3_HOME)\lib\glibmm-2.68\include;$(GTK3_HOME)\include\cairomm-1.16;$(GTK3_HOME)\lib\cairomm-1.16\include;$(GTK3_HOME)\include\sigc++-3.0;$(GTK3_HOME)\lib\sigc++-3.0\include;$(GTK3_HOME)\include\pango-1.0;$(GTK3_HOME)\include\pixman-1;$(GTK3_HOME)\include\fribidi;$(GTK3_HOME)\include\harfbuzz;$(GTK3_HOME)\include\freetype2;$(GTK3_HOME)\include\gdk-pixbuf-2.0;$(GTK3_HOME)\include\libpng16;$(GTK3_HOME)\include\glib-2.0;$(GTK3_HOME)\lib\glib-2.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(GTK3_HOME)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gtkmm-vc143-4.0.lib;gtk-4.lib;pangowin32-1.0.lib;cairo-gobject.lib;graphene-1.0.lib;pangomm-vc143-2.48.lib;giomm-vc143-2.68.lib;gio-2.0.lib;glibmm-vc143-2.68.lib;glibmm_generate_extra_defs-vc143-2.68.lib;cairomm-vc143-1.16.lib;sigc-3.0.lib;pangocairo-1.0.lib;pango-1.0.lib;harfbuzz.lib;cairo.lib;gdk_pixbuf-2.0.lib;gobject-2.0.lib;glib-2.0.lib;intl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

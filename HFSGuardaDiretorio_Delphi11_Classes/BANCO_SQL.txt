@@ -1,0 +1,97 @@
+create table IF NOT EXISTS Abas(
+cod integer not null, 
+nome varchar(10) not null,
+primary key (cod))
+
+create table IF NOT EXISTS Extensoes(
+cod integer not null, 
+nome varchar(20) not null, 
+bmp16 BLOB COLLATE NOCASE null,
+bmp32 BLOB COLLATE NOCASE null,
+primary key (cod))
+
+create table IF NOT EXISTS Diretorios(
+aba integer not null, 
+cod integer not null,
+ordem integer not null, 
+nome varchar(255) not null,
+tam numeric not null,
+tipo char(1) not null,
+modificado date not null, 
+atributos varchar(20) not null,
+coddirpai integer not null, 
+caminho varchar(255) not null,
+primary key (aba, cod, ordem))
+
+
+create view consultadirpai 
+as
+SELECT d.aba
+,d.cod
+,d.ordem
+,d.coddirpai
+,d.nome
+,d.tam
+,d.tipo
+,d.modificado
+,d.atributos
+,d.caminho
+,(select nome as nomeaba from Abas where cod=d.aba) as nomeaba
+,(select nome as nomepai from Diretorios where cod=d.cod and ordem=d.coddirpai and aba=d.aba) as nomepai
+,(select caminho as caminhopai from Diretorios where cod=d.cod and ordem=d.coddirpai and aba=d.aba) as caminhopai
+FROM Diretorios d
+where d.tipo='D' 
+and d.coddirpai = 0
+
+
+create view consultadirfilho
+as
+SELECT d.aba
+,d.cod
+,d.ordem
+,d.coddirpai
+,d.nome
+,d.tam
+,d.tipo
+,d.modificado
+,d.atributos
+,d.caminho
+,(select nome as nomeaba from Abas where cod=d.aba) as nomeaba
+,(select nome as nomepai from Diretorios where cod=d.cod and ordem=d.coddirpai and aba=d.aba) as nomepai
+,(select caminho as caminhopai from Diretorios where cod=d.cod and ordem=d.coddirpai and aba=d.aba) as caminhopai
+FROM Diretorios d
+where d.tipo='D' 
+and d.coddirpai > 0
+
+
+create view consultaarquivo
+as
+SELECT d.aba
+,d.cod
+,d.ordem
+,d.coddirpai
+,d.nome
+,d.tam
+,d.tipo
+,d.modificado
+,d.atributos
+,d.caminho
+,(select nome as nomeaba from Abas where cod=d.aba) as nomeaba
+,(select nome as nomepai from Diretorios where cod=d.cod and ordem=d.coddirpai and aba=d.aba) as nomepai
+,(select caminho as caminhopai from Diretorios where cod=d.cod and ordem=d.coddirpai and aba=d.aba) as caminhopai
+FROM Diretorios d
+
+
+
+select aba, cod, ordem, coddirpai, nome, tam, tipo, modificado, atributos, caminho, nomeaba, nomepai, caminhopai
+from consultadirpai
+order by 1,2,3,4
+
+
+select aba, cod, ordem, coddirpai, nome, tam, tipo, modificado, atributos, caminho, nomeaba, nomepai, caminhopai
+from consultadirfilho
+order by 1,2,3,4
+
+select aba, cod, ordem, coddirpai, nome, tam, tipo, modificado, atributos, caminho, nomeaba, nomepai, caminhopai
+from consultaarquivo
+order by tipo desc, ordem

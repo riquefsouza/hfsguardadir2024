@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>imagens/cdouro.bmp</file>
+        <file>imagens/Abrir.bmp</file>
+        <file>imagens/Fechar.bmp</file>
+        <file>imagens/splash.bmp</file>
+        <file>imagens/arquivo.gif</file>
+        <file>imagens/cdouro.gif</file>
+        <file>imagens/cdprata.gif</file>
+        <file>imagens/dir-aberto.gif</file>
+        <file>imagens/diretorio.gif</file>
+        <file>imagens/arquivo.bmp</file>
+        <file>imagens/Abrir32.bmp</file>
+        <file>imagens/arquivo32.bmp</file>
+        <file>imagens/Fechar32.bmp</file>
+        <file>imagens/FotoRosto.bmp</file>
+        <file>imagens/zip.bmp</file>
+        <file>imagens/zip32.bmp</file>
+    </qresource>
+</RCC>
